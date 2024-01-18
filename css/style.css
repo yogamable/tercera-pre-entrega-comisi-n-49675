@@ -192,7 +192,58 @@ header .dropdown {
   overflow: auto;
 }
 .contenedor .grid-1-terapias .subtitulo-1 {
+  text-align: center;
+  letter-spacing: 0.6rem;
+}
+.contenedor .grid-1-terapias h1 {
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 2rem;
+}
+.contenedor .grid-1-terapias .subtitulo-2 {
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+.contenedor .grid-1-terapias .terapia {
+  display: block;
+  justify-content: left;
+  text-align: left;
+  border-left: solid 4px #add6ca;
+  gap: 1rem;
+  padding-left: 0.5rem;
+}
+.contenedor .grid-1-terapias .terapia h4 {
+  color: #add6ca;
   text-transform: uppercase;
+  letter-spacing: 0.22rem;
+  font-size: 2rem;
+}
+.contenedor .grid-1-terapias .terapia mark {
+  background-color: #add6ca;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+}
+.contenedor .grid-1-terapias .terapia h5 {
+  color: #add6ca;
+}
+.contenedor .grid-1-terapias .terapia p {
+  font-size: 0.8rem;
+  color: #414141;
+}
+.contenedor .grid-1-terapias .terapia a {
+  color: #414141;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-color: #add6ca;
+}
+.contenedor .grid-1-terapias .terapia .accordion-item {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+}
+.contenedor .grid-1-terapias .terapia .accordion-item .accordion-button {
+  background-color: #add6ca;
 }
 .contenedor .grid-1-cursos {
   display: block;
@@ -345,6 +396,7 @@ header .dropdown {
   background-color: #add6ca;
   border-color: #414141;
   border-radius: 0.5rem;
+  opacity: 60%;
 }
 
 .grid-2 {

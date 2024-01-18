@@ -1,0 +1,47 @@
+header {
+    display: block;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    .menu-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        height: 10vh;
+    }
+
+    .logo-nav {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .menu-ul {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        gap: 2.5rem;
+        padding-top: 1rem;
+
+        .links-menu,
+        a {
+            list-style-type: none;
+            color: $celeste;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 1.2rem;
+        }
+
+        .links-menu:hover {
+            text-decoration: overline;
+            text-decoration-color: $rosado;
+        }
+    }
+
+    .dropdown {
+        display: none;
+    }
+}

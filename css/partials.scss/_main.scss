@@ -82,7 +82,16 @@
 
         overflow: auto;
 
+        .subtitulo-1 {
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
         .subtitulo-2 {
+            text-align: center;
             letter-spacing: 1rem;
             font-weight: 400;
         }
@@ -117,7 +126,7 @@
         padding-right: 4rem;
 
         overflow: auto;
-        
+
         .subtitulo-1 {
             text-transform: uppercase;
         }
@@ -181,22 +190,6 @@
 
             }
         }
-
-    .contacto-datos {
-
-    .contacto-1 {
-        display: block;
-        justify-content: left;
-        text-align: left;
-    }
-
-    .datos {
-        display: flex;
-        justify-content: left;
-        justify-items: left;
-    }
-            
-        }
     }
 
     .grid-1-blog {
@@ -236,6 +229,7 @@
                     color: $rosado;
                 }
             }
+
             .links-interes {
                 background-color: $blanco;
                 color: $rosado;
@@ -247,18 +241,101 @@
     }
 
     .grid-1-contacto {
+        display: block;
+        justify-content: center;
+        padding-left: 4rem;
+        padding-right: 4rem;
 
-        .subtitulo-1 {
-            letter-spacing: 1.5rem;
+        overflow: scroll;
+        
+        .titulo-contacto {
+            display: block;
+            justify-content: center;
+
+            .subtitulo-1 {
+                text-align: center;
+                letter-spacing: 2.5rem;
+            }
+            h1 {
+                text-align: center;
+                letter-spacing: 2rem;
+            }
+
+            .subtitulo-2 {
+                letter-spacing: .35rem;
+            }
+
         }
 
-        h1 {
-            letter-spacing: 1.5rem;
-        }
+        .contacto-1 {
 
-        .subtitulo-2 {
-            letter-spacing: 1.5rem;
+            .form {
+                display: flex;
+                gap: 1rem;
+                padding-top: .5rem;
+
+                p{
+                    color: $gris;
+                    text-transform: uppercase;
+                    background: $rosado;
+                    opacity: 80%;
+                }
+                
+                label {
+                    color: $gris;
+                    opacity: 80%;
+                }
+
+                input {
+                    background-color: $celeste;
+                    border-color: $celeste;
+                    border-radius: .5rem;
+                }
+
+            }
+
+            .form-2 {
+                gap: 2rem;
+            }
+
+            .form-3 {
+                gap: .9rem;
+            }
+
+            .form-4 {
+                color: $celeste;
+            }
+
+            .form-5 {
+                display: block;
+                
+                .checkbox-div {
+                    display: flex;
+                    justify-content: left;
+                    justify-items: left;
+                    border-radius: 1rem;
+
+                    input, label {
+                        justify-items: left;
+                    }
+    
+                    input {
+                        background-color: $celeste;
+                    }
+                }             
+            }
+
+            .form-7 {
+                textarea {
+                    background-color: $celeste;
+                    border-color: $gris;
+                    border-radius: .5rem;
+                }
+            }
+            
+
         }
+        
     }
 
 }
@@ -417,6 +494,10 @@
     height: 80vh;
 }
 
-.contenedor-terapias {
+.contenedor-blog {
+    height: 80vh;
+}
+
+.contenedor-contacto {
     height: 80vh;
 }

@@ -47,72 +47,78 @@
     </header>
 
     <main>
-        <div class="contenedor">
-            <div class="grid-1 cajas grid-1-contacto">
+        <div class="contenedor contenedor-contacto">
 
-                <div>
-                    <h2 class="subtitulo-1">Ponte en</h2>
-                    <h1>Contacto</h1>
-                    <h2 class="subtitulo-2">y conoce más</h2>
-                    <hr>
-                </div>
+                <div class="grid-1 caja grid-1-contacto">
 
-                <form class="contacto-datos">
+                    <div class="titulo-contacto">
+                        <h2 class="subtitulo-1">Ponte en</h2>
+                        <h1>Contacto</h1>
+                        <h2 class="subtitulo-2">y comienza tu experiencia con Yogamable</h2>
+                        <hr>
+                    </div>
 
                     <div class="contacto-1">
-                        <div class="datos">
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" placeholder="Ingresa tu nombre" id="nombre" required>
-                        </div>
-                        <br>
-    
-                        <div class="datos">
-                            <label for="Mail">Mail:</label>
-                            <input type="email" placeholder="Ingresa tu mail" id="mail" required>
-                        </div>
-    
-                        <div class="datos">
-                            <label for="telefono">Teléfono:</label>
-                            <input type="tel" placeholder="Ingresa tu teléfono" id="telefono" required>
-                        </div>
-                    </div>
 
-                    <div class="contacto-accion">
-                        <h3>Selecciona las terapias de las que quieres recibir información</h3>
-                        <div><label for="yoga">Yoga Tradicional</label><input type="checkbox" id="yoga">
-                            <label for="tarot">Tarot Terapéutico Transpersonal</label><input type="checkbox" id="tarot">
-                            <label for="flores">Flores de Bach</label><input type="checkbox" id="flores">
-                        </div>
-                        <div>
-                            <label for="meditacion">Meditación</label><input type="checkbox" id="meditacion">
-                            <label for="dmt">Danza Movimiento Terapia</label><input type="checkbox" id="dmt">
-                        </div>
+                        <form action="">
+                            <div class="form form-0">
+                                <p>Ingresa tus datos aquí:</p>
+                            </div>
+
+                            <div class="form form-1">
+                                <label for="nombre">Nombre:</label><input type="nombre" placeholder="Escribe tu nombre aquí" size="50" maxlength="40">
+                            </div>
+                            
+                            <div class="form form-2">
+                                <label for="mail">E-mail:</label><input type="mail" size="50" maxlength="40" placeholder="Escribe tu correo aquí">
+                            </div>
+
+                            <div class=" form form-3">
+                                <label for="telefono">Teléfono:</label><input type="text" placeholder="Escribe tu teléfono o whatsapp" size="50" maxlength="12">
+                            </div>
+                            <br>
+                            <div class="form form-4">
+                                <p>Quiero recibir información sobre: </p>
+                            </div>
+
+                            <div class="form form-5">
+
+                                <div class="checkbox-div">
+                                    <input type="checkbox"> <label for="text">Yoga Tradicional</label>
+                                </div>
+                                <div class="checkbox-div">
+                                    <input type="checkbox"> <label for="text">Tarot Terapéutico Transpersonal</label>
+                                </div>
+                                <div class="checkbox-div">
+                                    <input type="checkbox"> <label for="text">Terapia Floral de Bach</label>
+                                </div>
+                                <div class="checkbox-div">
+                                    <input type="checkbox"> <label for="text">Danza Movimiento Terapia</label>
+                                </div>
+                                <div class="checkbox-div">
+                                    <input type="checkbox"> <label for="text">Prácticas de Meditación</label>
+                                </div>
+                                <div class="checkbox-div">
+                                    <input type="checkbox"> <label for="text">Cursos&Talleres</label>
+                                </div>
+
+                                <div class="form form-6">
+                                    <p>Escribe un mensaje aquí:</p>
+                                </div>
+
+                                <div class="form form-7">
+                                    <textarea name="mensaje" id="" cols="100"  rows="10" maxlength="100">Escribe un mensaje aquí</textarea>
+                                </div>
+                            </div>
+                        </form>
+                        
 
                     </div>
-                    <div>
-                        <label for="mensaje"></label>
-                        <textarea cols="50" rows="10" placeholder="Aquí escribe tu mensaje" id="mensaje"
-                            required></textarea>
-                    </div>
-                    <div>
-                        <h3>¿Quieres recibir el newsletter de Yogamable?</h3>
-                    </div>
-                    <div>
-                        <label for="si">Si, me encantaría!</label><input type="radio" name="newsletter" id="si">
-                        <label for="no">Por ahora no, gracias</label><input type="radio" name="newsletter" id="no">
-
-                    </div>
-                    <div>
-                        <input type="reset">
-                        <input type="submit">
-                    </div>
-                </form>
-
-
+            
             </div>
 
             <div class="grid-2 cajas">
-                <a href="../pages/terapias.html">Yoga Tradicional</a>
+                <a href="./Yoga.html">Yoga Tradicional</a>
             </div>
             <div class="grid-3 cajas">
                 <a href="./Tarot.html">Tarot Transpersonal</a>
@@ -129,7 +135,7 @@
             <div class="grid-7 cajas">
                 <a href="./cursos.html">Cursos<br>&Talleres</a>
             </div>
-        </div>
+            </div>
     </main>
 
     <footer class="footer">

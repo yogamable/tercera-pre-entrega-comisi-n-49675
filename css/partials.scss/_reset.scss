@@ -6,3 +6,9 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
+.focus-in-expand {
+    -webkit-animation: focus-in-expand 1s ease-out 0.5s both;
+            animation: focus-in-expand 1s ease-out 0.5s both;
+
+}

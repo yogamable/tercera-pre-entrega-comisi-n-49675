@@ -1,11 +1,11 @@
 .contenedor {
-    height: 80vh;
     display: grid;
-    grid-template-columns: 3fr 3fr 3fr 3fr 3fr 3fr;
-    grid-template-rows: 3fr 2fr;
+    grid-template-columns: 4fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr;
     grid-template-areas:
-        "grid-1 grid-1 grid-1 grid-1 grid-1 grid-1"
-        "grid-2 grid-3 grid-4 grid-5 grid-6 grid-7";
+        "grid-1 grid-2 grid-3"
+        "grid-1 grid-4 grid-5"
+        "grid-1 grid-6 grid-7";
 
     justify-content: center;
     border-top: solid 1px $celeste;
@@ -80,8 +80,11 @@
         padding-left: 4rem;
         padding-right: 4rem;
 
-        .subtitulo-1 {
-            padding: .5rem;
+        overflow: auto;
+
+        .subtitulo-2 {
+            letter-spacing: 1rem;
+            font-weight: 400;
         }
 
         .sobre-mi {
@@ -90,6 +93,8 @@
             color: $gris;
             font-weight: 300;
 
+
+
             .sobre-mi-p-1 {
                 &::first-letter {
                     font-size: 2rem;
@@ -97,169 +102,321 @@
                 }
             }
 
+            a {
+                color: $celeste;
+                font-size: 1.5rem;
+            }
+
         }
     }
 
     .grid-1-terapias {
+        display: block;
+        justify-content: center;
+        padding-left: 4rem;
+        padding-right: 4rem;
+
+        overflow: auto;
+        
         .subtitulo-1 {
             text-transform: uppercase;
         }
     }
 
     .grid-1-cursos {
-        
+        display: block;
+        justify-content: center;
+        padding-left: 4rem;
+        padding-right: 4rem;
 
+        overflow: auto;
+
+        .subtitulo-1 {
+            letter-spacing: .8rem;
+        }
+
+        h1 {
+            letter-spacing: 1rem;
+        }
+
+        .subtitulo-2 {
+            letter-spacing: 1.5rem;
+        }
 
         .curso-1 {
             display: block;
-            justify-content: left;
+            justify-content: center;
             text-align: left;
-            
+
             h4 {
                 color: $celeste;
                 text-transform: uppercase;
+                letter-spacing: .2rem;
+            }
+
+            mark {
+                background-color: $celeste;
+                text-transform: uppercase;
+                font-size: 1rem;
+                letter-spacing: .65rem;
+            }
+
+            h5 {
+                color: $celeste;
             }
 
             p {
                 font-size: .8rem;
-                
+                color: $gris;
+            }
+
+            a {
+                color: $gris;
+                font-size: 1.2rem;
+                font-weight: 300;
+                text-transform: uppercase;
+                background-color: $celeste;
+                letter-spacing: .5rem;
+
+
             }
         }
+
+    .contacto-datos {
+
+    .contacto-1 {
+        display: block;
+        justify-content: left;
+        text-align: left;
     }
 
-    
-
-    .grid-2 {
-        display: grid;
-        grid-area: grid-2;
-        background-image: url(../img/yoga.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        justify-content: center;
-        align-content: center;
-
-        a {
-            color: $rosado;
-            background: $blanco;
-            background-size: cover;
-            text-align: center;
-            font-size: .99rem;
-            letter-spacing: .3rem;
-            text-decoration: none;
-            text-transform: uppercase;
+    .datos {
+        display: flex;
+        justify-content: left;
+        justify-items: left;
+    }
+            
         }
     }
 
-    .grid-3 {
-        display: grid;
-        grid-area: grid-3;
-        background-image: url(../img/tarot.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+    .grid-1-blog {
+        display: block;
         justify-content: center;
-        align-items: center;
+        padding-left: 4rem;
+        padding-right: 4rem;
 
-        a {
-            color: $rosado;
-            background: $blanco;
-            background-size: cover;
-            text-align: center;
-            font-size: .99rem;
-            letter-spacing: .3rem;
-            text-decoration: none;
-            text-transform: uppercase;
+        overflow: auto;
+
+        .subtitulo-1 {
+            letter-spacing: 1.2rem;
         }
-    }
 
-    .grid-4 {
-        display: grid;
-        grid-area: grid-4;
-        background-image: url(../img/flores.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+        .subtitulo-2 {
+            letter-spacing: .45rem;
+        }
 
-        justify-content: center;
-        align-items: center;
-
-        a {
-            color: $rosado;
-            background: $blanco;
-            background-size: cover;
-            text-align: center;
-            font-size: .99rem;
+        h4 {
+            color: $gris;
+            font-size: 1.2rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            background-color: $celeste;
             letter-spacing: .5rem;
-            text-decoration: none;
-            text-transform: uppercase;
+        }
+
+        .entrada-1 {
+            text-align: left;
+
+            mark {
+                background-color: $celeste;
+            }
+
+            .links-blog {
+                a {
+                    color: $rosado;
+                }
+            }
+            .links-interes {
+                background-color: $blanco;
+                color: $rosado;
+
+            }
+
+
         }
     }
 
-    .grid-5 {
-        display: grid;
-        grid-area: grid-5;
-        background-image: url(../img/dmt.png);
-        background-repeat: no-repeat;
-        background-position: center;
+    .grid-1-contacto {
+
+        .subtitulo-1 {
+            letter-spacing: 1.5rem;
+        }
+
+        h1 {
+            letter-spacing: 1.5rem;
+        }
+
+        .subtitulo-2 {
+            letter-spacing: 1.5rem;
+        }
+    }
+
+}
+
+
+
+
+.grid-2 {
+    display: grid;
+    grid-area: grid-2;
+    background-image: url(../img/yoga.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-content: center;
+
+    a {
+        color: $rosado;
+        background: $blanco;
         background-size: cover;
-
-        justify-content: center;
-        align-items: center;
-
-        a {
-            color: $rosado;
-            background: $blanco;
-            background-size: cover;
-            text-align: center;
-            font-size: .99rem;
-            letter-spacing: .25rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
+        text-align: center;
+        font-size: .99rem;
+        letter-spacing: .3rem;
+        text-decoration: none;
+        text-transform: uppercase;
     }
+}
 
-    .grid-6 {
-        display: grid;
-        grid-area: grid-6;
-        background-image: url(../img/meditacion.png);
-        background-repeat: no-repeat;
-        background-position: center;
+.grid-3 {
+    display: grid;
+    grid-area: grid-3;
+    background-image: url(../img/tarot.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        color: $rosado;
+        background: $blanco;
         background-size: cover;
-        justify-content: center;
-        align-items: center;
-
-        a {
-            color: $rosado;
-            background: $blanco;
-            background-size: cover;
-            text-align: center;
-            font-size: .99rem;
-            letter-spacing: .5rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
+        text-align: center;
+        font-size: .99rem;
+        letter-spacing: .3rem;
+        text-decoration: none;
+        text-transform: uppercase;
     }
+}
 
-    .grid-7 {
-        display: grid;
-        grid-area: grid-7;
-        background-image: url(../img/cursos.png);
-        background-repeat: no-repeat;
-        background-position: center;
+.grid-4 {
+    display: grid;
+    grid-area: grid-4;
+    background-image: url(../img/flores.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    justify-content: center;
+    align-items: center;
+
+    a {
+        color: $rosado;
+        background: $blanco;
         background-size: cover;
-        justify-content: center;
-        align-items: center;
-
-        a {
-            color: $rosado;
-            background: $blanco;
-            background-size: cover;
-            text-align: center;
-            font-size: .99rem;
-            letter-spacing: .95rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
+        text-align: center;
+        font-size: .99rem;
+        letter-spacing: .5rem;
+        text-decoration: none;
+        text-transform: uppercase;
     }
+}
+
+.grid-5 {
+    display: grid;
+    grid-area: grid-5;
+    background-image: url(../img/dmt.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    justify-content: center;
+    align-items: center;
+
+    a {
+        color: $rosado;
+        background: $blanco;
+        background-size: cover;
+        text-align: center;
+        font-size: .99rem;
+        letter-spacing: .25rem;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+.grid-6 {
+    display: grid;
+    grid-area: grid-6;
+    background-image: url(../img/meditacion.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        color: $rosado;
+        background: $blanco;
+        background-size: cover;
+        text-align: center;
+        font-size: .99rem;
+        letter-spacing: .5rem;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+.grid-7 {
+    display: grid;
+    grid-area: grid-7;
+    background-image: url(../img/cursos.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        color: $rosado;
+        background: $blanco;
+        background-size: cover;
+        text-align: center;
+        font-size: .99rem;
+        letter-spacing: .95rem;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+
+.contenedor-index {
+    height: 80vh;
+}
+
+.contenedor-sobre-mi {
+    height: 80vh;
+}
+
+.contenedor-terapias {
+    height: 80vh;
+}
+
+.contenedor-cursos {
+    height: 80vh;
+}
+
+.contenedor-terapias {
+    height: 80vh;
 }

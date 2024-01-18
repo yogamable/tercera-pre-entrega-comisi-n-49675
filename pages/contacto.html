@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -48,26 +48,30 @@
 
     <main>
         <div class="contenedor">
-            <div class="grid-1 cajas">
+            <div class="grid-1 cajas grid-1-contacto">
 
-                <div class="contacto-accion">
-                    <h2>¡Ponte en contacto!</h2>
+                <div>
+                    <h2 class="subtitulo-1">Ponte en</h2>
+                    <h1>Contacto</h1>
+                    <h2 class="subtitulo-2">y conoce más</h2>
+                    <hr>
                 </div>
 
                 <form class="contacto-datos">
 
                     <div class="contacto-1">
-                        <div>
+                        <div class="datos">
                             <label for="nombre">Nombre:</label>
                             <input type="text" placeholder="Ingresa tu nombre" id="nombre" required>
                         </div>
+                        <br>
     
-                        <div>
+                        <div class="datos">
                             <label for="Mail">Mail:</label>
                             <input type="email" placeholder="Ingresa tu mail" id="mail" required>
                         </div>
     
-                        <div>
+                        <div class="datos">
                             <label for="telefono">Teléfono:</label>
                             <input type="tel" placeholder="Ingresa tu teléfono" id="telefono" required>
                         </div>
@@ -108,7 +112,7 @@
             </div>
 
             <div class="grid-2 cajas">
-                <a href="./Yoga.html">Yoga Tradicional</a>
+                <a href="../pages/terapias.html">Yoga Tradicional</a>
             </div>
             <div class="grid-3 cajas">
                 <a href="./Tarot.html">Tarot Transpersonal</a>
@@ -117,33 +121,39 @@
                 <a href="./flores.html">Flores de Bach</a>
             </div>
             <div class="grid-5 cajas">
-                <a href="./dmt.html">DanzaMovimientoTerapia</a>
+                <a href="./dmt.html">DanzaMovimiento<br>Terapia</a>
             </div>
             <div class="grid-6 cajas">
-                <a href="./meditacion.html">Meditación</a>
+                <a href="./meditacion.html">Prácticas de Meditación</a>
             </div>
             <div class="grid-7 cajas">
-                <a href="./cursos.html">Cursos&Talleres</a>
+                <a href="./cursos.html">Cursos<br>&Talleres</a>
             </div>
         </div>
     </main>
 
     <footer class="footer">
+
         <div class="footer-1">
-            <a href="./index.html"><img src="./img/isotipo-verde.png" height="20" alt="logo"> yogamable</a>
+            <a href="../index.html">yog<img src="../img/isotipo-verde.png" height="20" alt="logo">mable</a>
         </div>
 
         <div class="footer-2">
-            <a href="#"><i class="bi bi-facebook icono i-1"></i></a>
-            <a href="#"><i class="bi bi-instagram icono i-2"></i></a>
-            <a href="#"><i class="bi bi-whatsapp icono i-3"></i></a>
+            <a href="https://www.facebook.com/yogamablecl" target="_blank"><i class="bi bi-facebook icono i-1"></i></a>
+            <a href="https://www.instagram.com/yogamablecl/" target="_blank"><i
+                    class="bi bi-instagram icono i-2"></i></a>
+            <a href="mailto:yogamable@gmail.com" target="_blank"><i class="bi bi-envelope-at-fill"></i></a>
 
         </div>
 
         <div class="footer-3">
-            <p><i class="bi bi-c-circle"> </i>Copyright<br>NICOLEVELASQUEZ<br>2023</p>
+            <div>
+                <p><i class="bi bi-c-circle"></i> Copyright | NICOLEVELASQUEZ | 2023</p>
+            </div>
+
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>

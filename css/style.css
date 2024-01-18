@@ -91,11 +91,10 @@ header .dropdown {
 }
 
 .contenedor {
-  height: 80vh;
   display: grid;
-  grid-template-columns: 3fr 3fr 3fr 3fr 3fr 3fr;
-  grid-template-rows: 3fr 2fr;
-  grid-template-areas: "grid-1 grid-1 grid-1 grid-1 grid-1 grid-1" "grid-2 grid-3 grid-4 grid-5 grid-6 grid-7";
+  grid-template-columns: 4fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr 2fr;
+  grid-template-areas: "grid-1 grid-2 grid-3" "grid-1 grid-4 grid-5" "grid-1 grid-6 grid-7";
   justify-content: center;
   border-top: solid 1px #add6ca;
   border-bottom: solid 1px #add6ca;
@@ -158,9 +157,11 @@ header .dropdown {
   justify-content: center;
   padding-left: 4rem;
   padding-right: 4rem;
+  overflow: auto;
 }
-.contenedor .grid-1-sobre-mi .subtitulo-1 {
-  padding: 0.5rem;
+.contenedor .grid-1-sobre-mi .subtitulo-2 {
+  letter-spacing: 1rem;
+  font-weight: 400;
 }
 .contenedor .grid-1-sobre-mi .sobre-mi {
   text-align: left;
@@ -172,22 +173,122 @@ header .dropdown {
   font-size: 2rem;
   font-weight: 500;
 }
+.contenedor .grid-1-sobre-mi .sobre-mi a {
+  color: #add6ca;
+  font-size: 1.5rem;
+}
+.contenedor .grid-1-terapias {
+  display: block;
+  justify-content: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  overflow: auto;
+}
 .contenedor .grid-1-terapias .subtitulo-1 {
   text-transform: uppercase;
 }
+.contenedor .grid-1-cursos {
+  display: block;
+  justify-content: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  overflow: auto;
+}
+.contenedor .grid-1-cursos .subtitulo-1 {
+  letter-spacing: 0.8rem;
+}
+.contenedor .grid-1-cursos h1 {
+  letter-spacing: 1rem;
+}
+.contenedor .grid-1-cursos .subtitulo-2 {
+  letter-spacing: 1.5rem;
+}
 .contenedor .grid-1-cursos .curso-1 {
   display: block;
-  justify-content: left;
+  justify-content: center;
   text-align: left;
 }
 .contenedor .grid-1-cursos .curso-1 h4 {
   color: #add6ca;
   text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.contenedor .grid-1-cursos .curso-1 mark {
+  background-color: #add6ca;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.65rem;
+}
+.contenedor .grid-1-cursos .curso-1 h5 {
+  color: #add6ca;
 }
 .contenedor .grid-1-cursos .curso-1 p {
   font-size: 0.8rem;
+  color: #414141;
 }
-.contenedor .grid-2 {
+.contenedor .grid-1-cursos .curso-1 a {
+  color: #414141;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-color: #add6ca;
+  letter-spacing: 0.5rem;
+}
+.contenedor .grid-1-cursos .contacto-datos .contacto-1 {
+  display: block;
+  justify-content: left;
+  text-align: left;
+}
+.contenedor .grid-1-cursos .contacto-datos .datos {
+  display: flex;
+  justify-content: left;
+  justify-items: left;
+}
+.contenedor .grid-1-blog {
+  display: block;
+  justify-content: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  overflow: auto;
+}
+.contenedor .grid-1-blog .subtitulo-1 {
+  letter-spacing: 1.2rem;
+}
+.contenedor .grid-1-blog .subtitulo-2 {
+  letter-spacing: 0.45rem;
+}
+.contenedor .grid-1-blog h4 {
+  color: #414141;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-color: #add6ca;
+  letter-spacing: 0.5rem;
+}
+.contenedor .grid-1-blog .entrada-1 {
+  text-align: left;
+}
+.contenedor .grid-1-blog .entrada-1 mark {
+  background-color: #add6ca;
+}
+.contenedor .grid-1-blog .entrada-1 .links-blog a {
+  color: #E47264;
+}
+.contenedor .grid-1-blog .entrada-1 .links-interes {
+  background-color: #fff;
+  color: #E47264;
+}
+.contenedor .grid-1-contacto .subtitulo-1 {
+  letter-spacing: 1.5rem;
+}
+.contenedor .grid-1-contacto h1 {
+  letter-spacing: 1.5rem;
+}
+.contenedor .grid-1-contacto .subtitulo-2 {
+  letter-spacing: 1.5rem;
+}
+
+.grid-2 {
   display: grid;
   grid-area: grid-2;
   background-image: url(../img/yoga.png);
@@ -197,7 +298,7 @@ header .dropdown {
   justify-content: center;
   align-content: center;
 }
-.contenedor .grid-2 a {
+.grid-2 a {
   color: #E47264;
   background: #fff;
   background-size: cover;
@@ -207,7 +308,8 @@ header .dropdown {
   text-decoration: none;
   text-transform: uppercase;
 }
-.contenedor .grid-3 {
+
+.grid-3 {
   display: grid;
   grid-area: grid-3;
   background-image: url(../img/tarot.png);
@@ -217,7 +319,7 @@ header .dropdown {
   justify-content: center;
   align-items: center;
 }
-.contenedor .grid-3 a {
+.grid-3 a {
   color: #E47264;
   background: #fff;
   background-size: cover;
@@ -227,7 +329,8 @@ header .dropdown {
   text-decoration: none;
   text-transform: uppercase;
 }
-.contenedor .grid-4 {
+
+.grid-4 {
   display: grid;
   grid-area: grid-4;
   background-image: url(../img/flores.png);
@@ -237,7 +340,7 @@ header .dropdown {
   justify-content: center;
   align-items: center;
 }
-.contenedor .grid-4 a {
+.grid-4 a {
   color: #E47264;
   background: #fff;
   background-size: cover;
@@ -247,7 +350,8 @@ header .dropdown {
   text-decoration: none;
   text-transform: uppercase;
 }
-.contenedor .grid-5 {
+
+.grid-5 {
   display: grid;
   grid-area: grid-5;
   background-image: url(../img/dmt.png);
@@ -257,7 +361,7 @@ header .dropdown {
   justify-content: center;
   align-items: center;
 }
-.contenedor .grid-5 a {
+.grid-5 a {
   color: #E47264;
   background: #fff;
   background-size: cover;
@@ -267,7 +371,8 @@ header .dropdown {
   text-decoration: none;
   text-transform: uppercase;
 }
-.contenedor .grid-6 {
+
+.grid-6 {
   display: grid;
   grid-area: grid-6;
   background-image: url(../img/meditacion.png);
@@ -277,7 +382,7 @@ header .dropdown {
   justify-content: center;
   align-items: center;
 }
-.contenedor .grid-6 a {
+.grid-6 a {
   color: #E47264;
   background: #fff;
   background-size: cover;
@@ -287,7 +392,8 @@ header .dropdown {
   text-decoration: none;
   text-transform: uppercase;
 }
-.contenedor .grid-7 {
+
+.grid-7 {
   display: grid;
   grid-area: grid-7;
   background-image: url(../img/cursos.png);
@@ -297,7 +403,7 @@ header .dropdown {
   justify-content: center;
   align-items: center;
 }
-.contenedor .grid-7 a {
+.grid-7 a {
   color: #E47264;
   background: #fff;
   background-size: cover;
@@ -306,6 +412,26 @@ header .dropdown {
   letter-spacing: 0.95rem;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.contenedor-index {
+  height: 80vh;
+}
+
+.contenedor-sobre-mi {
+  height: 80vh;
+}
+
+.contenedor-terapias {
+  height: 80vh;
+}
+
+.contenedor-cursos {
+  height: 80vh;
+}
+
+.contenedor-terapias {
+  height: 80vh;
 }
 
 .footer {

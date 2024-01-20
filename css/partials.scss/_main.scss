@@ -1,6 +1,7 @@
 .contenedor {
+    height: 80vh;
     display: grid;
-    grid-template-columns: 4fr 1fr 1fr;
+    grid-template-columns: 6fr 2fr 2fr;
     grid-template-rows: 2fr 2fr 2fr;
     grid-template-areas:
         "grid-1 grid-2 grid-3"
@@ -11,8 +12,49 @@
     border-top: solid 1px $celeste;
     border-bottom: solid 1px $celeste;
 
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    
+    @media (max-width: 1115px) {
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-rows: 4fr 2fr 2fr;
+        grid-template-areas: 
+        "grid-1 grid-1 grid-1"
+        "grid-2 grid-3 grid-4"
+        "grid-5 grid-6 grid-7";
+    }
+
+    @media (max-width:670px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "grid-1 grid-1"
+        "grid-2 grid-3"
+        "grid-4 grid-5"
+        "grid-6 grid-7";
+    }
+
+    @media (max-width:410px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8,1fr);
+        grid-template-areas: 
+        "grid-1"
+        "grid-2"
+        "grid-3"
+        "grid-4"
+        "grid-5"
+        "grid-6"
+        "grid-7"
+        "grid-8";
+
+    }
+
+    @media (max-width:387px) {
+        margin: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding: 2rem;
+    }
 
     .cajas {
         border-radius: .5rem;
@@ -40,6 +82,15 @@
             letter-spacing: .8rem;
             color: $rosado;
             justify-items: center;
+
+            @media (max-width: 1115px) {
+                font-size: 3rem;
+                letter-spacing: .1rem;
+            }
+
+            @media (max-width:387px) {
+                font-size: 2rem;
+            }
         }
 
         .subtitulo-1 {
@@ -50,6 +101,11 @@
             margin-top: 1rem;
             font-size: 2.5rem;
             opacity: 80%;
+
+            @media (max-width: 1115px) {
+                font-size: 1.5rem;
+                letter-spacing: .5rem;
+            }
         }
 
         .div-titulo-principal {
@@ -57,9 +113,19 @@
             margin: .5rem;
             margin-left: 1rem;
             align-items: center;
+            justify-content: center;
+
+
 
             .logo-titulo {
                 margin: .2rem;
+
+                @media (max-width: 1106px) {
+                    height: 2.2rem;
+                    align-items: center;
+                    margin-bottom: .7rem;
+
+                }
             }
 
         }
@@ -71,6 +137,15 @@
             color: $rosado;
             opacity: 60%;
             padding-bottom: 1rem;
+
+            @media (max-width: 1106px) {
+                font-size: 1rem;
+                letter-spacing: .5rem;
+            }
+
+            @media (max-width:387px) {
+                font-size: .6rem;
+            }
         }
     }
 
@@ -142,60 +217,60 @@
             text-align: center;
             letter-spacing: .1rem;
         }
-    
-    .terapia {
-        display: block;
-        justify-content: left;
-        text-align: left;
-        border-left: solid 4px $celeste;
-        gap: 1rem;
-        padding-left: .5rem;
 
-        h4 {
-            color: $celeste;
-            text-transform: uppercase;
-            letter-spacing: .22rem;
-            font-size: 2rem;
-        }
+        .terapia {
+            display: block;
+            justify-content: left;
+            text-align: left;
+            border-left: solid 4px $celeste;
+            gap: 1rem;
+            padding-left: .5rem;
 
-        mark {
-            background-color: $celeste;
-            text-transform: uppercase;
-            font-size: 1rem;
-            letter-spacing: .2rem;
-        }
-
-        h5 {
-            color: $celeste;
-        }
-
-        p {
-            font-size: .8rem;
-            color: $gris;
-        }
-
-        a {
-            color: $gris;
-            font-size: 1rem;
-            font-weight: 300;
-            text-transform: uppercase;
-            background-color: $celeste;
-        }
-
-        .accordion-item {
-            font-family: 'Montserrat', sans-serif;
-            font-size: .8rem;
-
-            .accordion-button {
-                background-color: $celeste;
-                
-                
+            h4 {
+                color: $celeste;
+                text-transform: uppercase;
+                letter-spacing: .22rem;
+                font-size: 2rem;
             }
+
+            mark {
+                background-color: $celeste;
+                text-transform: uppercase;
+                font-size: 1rem;
+                letter-spacing: .2rem;
+            }
+
+            h5 {
+                color: $celeste;
+            }
+
+            p {
+                font-size: .8rem;
+                color: $gris;
+            }
+
+            a {
+                color: $gris;
+                font-size: 1rem;
+                font-weight: 300;
+                text-transform: uppercase;
+                background-color: $celeste;
+            }
+
+            .accordion-item {
+                font-family: 'Montserrat', sans-serif;
+                font-size: .8rem;
+
+                .accordion-button {
+                    background-color: $celeste;
+
+
+                }
+            }
+
         }
 
-    }
 
-        
 
 
     }
@@ -315,7 +390,7 @@
         padding-right: 4rem;
 
         overflow: scroll;
-        
+
         .titulo-contacto {
             display: block;
             justify-content: center;
@@ -324,6 +399,7 @@
                 text-align: center;
                 letter-spacing: 2.5rem;
             }
+
             h1 {
                 text-align: center;
                 letter-spacing: 2rem;
@@ -342,13 +418,13 @@
                 gap: 1rem;
                 padding-top: .5rem;
 
-                p{
+                p {
                     color: $gris;
                     text-transform: uppercase;
                     background: $rosado;
                     opacity: 80%;
                 }
-                
+
                 label {
                     color: $gris;
                     opacity: 80%;
@@ -376,21 +452,22 @@
 
             .form-5 {
                 display: block;
-                
+
                 .checkbox-div {
                     display: flex;
                     justify-content: left;
                     justify-items: left;
                     border-radius: 1rem;
 
-                    input, label {
+                    input,
+                    label {
                         justify-items: left;
                     }
-    
+
                     input {
                         background-color: $celeste;
                     }
-                }             
+                }
             }
 
             .form-7 {
@@ -401,10 +478,10 @@
                     opacity: 60%;
                 }
             }
-            
+
 
         }
-        
+
     }
 
 }
@@ -422,16 +499,29 @@
     justify-content: center;
     align-content: center;
 
-    a {
-        color: $rosado;
-        background: $blanco;
-        background-size: cover;
-        text-align: center;
-        font-size: .99rem;
-        letter-spacing: .3rem;
-        text-decoration: none;
-        text-transform: uppercase;
+
+    .div-bg-grid {
+        display: flex;
+        justify-content: space-between;
+        background-color: $blanco;
+        padding: .8rem;
+    
+        a {
+            color: $rosado;
+            background-color: $blanco;
+            background-size: cover;
+            text-align: center;
+            font-size: .99rem;
+            letter-spacing: .3rem;
+            text-decoration: none;
+            text-transform: uppercase;
+    
+            @media (max-width: 1106px) {
+                font-size: .8rem;
+            }
+        }
     }
+
 }
 
 .grid-3 {
@@ -444,16 +534,36 @@
     justify-content: center;
     align-items: center;
 
-    a {
-        color: $rosado;
-        background: $blanco;
-        background-size: cover;
-        text-align: center;
-        font-size: .99rem;
-        letter-spacing: .3rem;
-        text-decoration: none;
-        text-transform: uppercase;
+    .div-bg-grid {
+        display: flex;
+        justify-content: space-between;
+        background-color: $blanco;
+        padding: .8rem;
+        padding-top: .15rem;
+        padding-bottom: .15rem;
+
+        @media (max-width:1106px) {
+            padding-top: .15rem;
+            padding-bottom: .15rem;
+        }
+
+        a {
+            color: $rosado;
+            background-color: $blanco;
+            background-size: cover;
+            text-align: center;
+            font-size: .99rem;
+            letter-spacing: .13rem;
+            text-decoration: none;
+            text-transform: uppercase;
+    
+            @media (max-width: 1106px) {
+                font-size: .8rem;
+            }
+        }
     }
+
+    
 }
 
 .grid-4 {
@@ -467,16 +577,36 @@
     justify-content: center;
     align-items: center;
 
-    a {
-        color: $rosado;
-        background: $blanco;
-        background-size: cover;
-        text-align: center;
-        font-size: .99rem;
-        letter-spacing: .5rem;
-        text-decoration: none;
-        text-transform: uppercase;
+    .div-bg-grid {
+        display: flex;
+        justify-content: space-between;
+        background-color: $blanco;
+        padding: .8rem;
+        padding-top: .15rem;
+        padding-bottom: .15rem;
+
+        @media (max-width:1106px) {
+            padding-top: .15rem;
+            padding-bottom: .15rem;
+        }
+
+        a {
+            color: $rosado;
+            background: $blanco;
+            background-size: cover;
+            text-align: center;
+            font-size: .99rem;
+            letter-spacing: .3rem;
+            text-decoration: none;
+            text-transform: uppercase;
+    
+            @media (max-width: 1106px) {
+                font-size: .8rem;
+            }
+        }
     }
+    
+    
 }
 
 .grid-5 {
@@ -490,16 +620,32 @@
     justify-content: center;
     align-items: center;
 
-    a {
-        color: $rosado;
-        background: $blanco;
-        background-size: cover;
-        text-align: center;
-        font-size: .99rem;
-        letter-spacing: .25rem;
-        text-decoration: none;
-        text-transform: uppercase;
+    .div-bg-grid {
+        display: flex;
+        justify-content: space-between;
+        background-color: $blanco;
+        padding: .8rem;
+        padding-top: .15rem;
+        padding-bottom: .15rem;
+
+        a {
+            color: $rosado;
+            background: $blanco;
+            background-size: cover;
+            text-align: center;
+            font-size: .99rem;
+            letter-spacing: .3rem;
+            text-decoration: none;
+            text-transform: uppercase;
+    
+            @media (max-width: 1106px) {
+                font-size: .8rem;
+            }
+        }
+
     }
+
+    
 }
 
 .grid-6 {
@@ -512,16 +658,35 @@
     justify-content: center;
     align-items: center;
 
-    a {
-        color: $rosado;
-        background: $blanco;
-        background-size: cover;
-        text-align: center;
-        font-size: .99rem;
-        letter-spacing: .5rem;
-        text-decoration: none;
-        text-transform: uppercase;
+    .div-bg-grid {
+        display: flex;
+        justify-content: space-between;
+        background-color: $blanco;
+        padding: .8rem;
+
+        @media (max-width:1106px) {
+            padding-top: .15rem;
+            padding-bottom: .15rem;
+        }
+
+        a {
+            color: $rosado;
+            background-color: $blanco;
+            background-size: cover;
+            text-align: center;
+            font-size: .99rem;
+            letter-spacing: .3rem;
+            text-decoration: none;
+            text-transform: uppercase;
+    
+            @media (max-width: 1106px) {
+                font-size: .8rem;
+            }
+        }
+
     }
+
+    
 }
 
 .grid-7 {
@@ -534,39 +699,25 @@
     justify-content: center;
     align-items: center;
 
-    a {
-        color: $rosado;
-        background: $blanco;
-        background-size: cover;
-        text-align: center;
-        font-size: .99rem;
-        letter-spacing: .95rem;
-        text-decoration: none;
-        text-transform: uppercase;
+    .div-bg-grid {
+        display: flex;
+        justify-items: center;
+        background-color: $blanco;
+        padding: .8rem;
+
+        a {
+            color: $rosado;
+            background-color: $blanco;
+            background-size: cover;
+            text-align: center;
+            font-size: .99rem;
+            letter-spacing: .3rem;
+            text-decoration: none;
+            text-transform: uppercase;
+    
+            @media (max-width: 1106px) {
+                font-size: .8rem;
+            }
+        }
     }
-}
-
-
-.contenedor-index {
-    height: 80vh;
-}
-
-.contenedor-sobre-mi {
-    height: 80vh;
-}
-
-.contenedor-terapias {
-    height: 80vh;
-}
-
-.contenedor-cursos {
-    height: 80vh;
-}
-
-.contenedor-blog {
-    height: 80vh;
-}
-
-.contenedor-contacto {
-    height: 80vh;
 }

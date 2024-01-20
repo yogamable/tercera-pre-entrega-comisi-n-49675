@@ -1,8 +1,9 @@
 header {
     display: block;
+    justify-content: space-between;
     align-items: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
 
     .menu-nav {
         display: flex;
@@ -25,10 +26,15 @@ header {
         gap: 2.5rem;
         padding-top: 1rem;
 
+        @media (max-width: 1106px) {
+            display: none;
+        }
+
         .links-menu,
         a {
             list-style-type: none;
-            color: $celeste;
+            color: $gris;
+            opacity: 80%;
             text-decoration: none;
             text-transform: uppercase;
             font-weight: 400;
@@ -39,9 +45,22 @@ header {
             text-decoration: overline;
             text-decoration-color: $rosado;
         }
+
+
     }
 
     .dropdown {
         display: none;
+
+        @media (max-width: 1106px) {
+            display: block;
+
+            .dropdown-toggle {
+                color: $rosado;
+                font-size: 2rem;
+                background-color: $blanco;
+            }
+
+        }
     }
 }

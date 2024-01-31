@@ -14,16 +14,16 @@
 
     padding-left: 4rem;
     padding-right: 4rem;
-    
-    
+
+
     @media (max-width: 1115px) {
         display: grid;
         grid-template-columns: 2fr 2fr 2fr;
         grid-template-rows: 1fr 2fr 2fr;
-        grid-template-areas: 
-        "grid-1 grid-1 grid-1"
-        "grid-2 grid-3 grid-4"
-        "grid-5 grid-6 grid-7";
+        grid-template-areas:
+            "grid-1 grid-1 grid-1"
+            "grid-2 grid-3 grid-4"
+            "grid-5 grid-6 grid-7";
 
         padding-top: 0;
         padding-bottom: 0;
@@ -39,16 +39,16 @@
     @media (max-width:760px) {
         height: 100vh;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(8,1fr);
-        grid-template-areas: 
-        "grid-1"
-        "grid-2"
-        "grid-3"
-        "grid-4"
-        "grid-5"
-        "grid-6"
-        "grid-7"
-        "grid-8";
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas:
+            "grid-1"
+            "grid-2"
+            "grid-3"
+            "grid-4"
+            "grid-5"
+            "grid-6"
+            "grid-7"
+            "grid-8";
     }
 
     @media (max-width:480px) {
@@ -56,7 +56,8 @@
         padding-left: 2rem;
         padding-right: 2rem;
     }
-    @media (max-width:451px){
+
+    @media (max-width:451px) {
         padding: 0;
         margin: 0;
     }
@@ -92,6 +93,7 @@
                 font-size: 1.5rem;
                 letter-spacing: .5rem;
             }
+
             @media (max-width: 490px) {
                 font-size: .8rem;
                 letter-spacing: .5rem;
@@ -117,12 +119,15 @@
                 @media (max-width:1163px) {
                     letter-spacing: .1rem;
                 }
+
                 @media (max-width:552px) {
                     font-size: 4rem;
-                }      
+                }
+
                 @media (max-width:490px) {
                     font-size: 3rem;
                 }
+
                 @media (max-width:421px) {
                     font-size: 2.5rem;
                     letter-spacing: .2rem;
@@ -130,15 +135,17 @@
 
                 .logo-titulo {
                     margin-bottom: .8rem;
-    
+
                     @media (max-width: 552px) {
                         height: 3rem;
                         align-items: center;
                         margin-bottom: .7rem;
                     }
+
                     @media (max-width:490px) {
                         height: 2.5rem;
                     }
+
                     @media (max-width:421px) {
                         height: 1.9rem;
                         margin-top: .2rem;
@@ -159,58 +166,786 @@
                 font-size: 1.2rem;
                 letter-spacing: .5rem;
             }
+
             @media (max-width: 490px) {
                 font-size: .8rem;
                 letter-spacing: .5rem;
             }
         }
     }
+}
 
-    .grid-1-cursos {
+.grid-2 {
+    display: grid;
+    grid-area: grid-2;
+    background-image: url(../img/yoga.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-content: center;
+
+    .div-bg-grid {
+        display: flex;
+        justify-content: center;
+        background-color: $blanco;
+        opacity: 80%;
+        padding: .8rem;
+
+        a {
+            color: $rosado;
+            text-align: center;
+            font-size: .99rem;
+            letter-spacing: .3rem;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        @media (max-width:1115px) {
+            padding-top: .15rem;
+            padding-bottom: .15rem;
+
+            a {
+                letter-spacing: .6rem;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width:912px) {
+            a {
+                letter-spacing: .6rem;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width:760px) {
+            border-radius: 1rem;
+
+            a {
+                letter-spacing: .6rem;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width:570px) {
+            border-radius: 1rem;
+
+            a {
+                letter-spacing: .3rem;
+            }
+        }
+    }
+}
+
+.grid-3 {
+    display: grid;
+    grid-area: grid-3;
+    background-image: url(../img/tarot.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+
+    .div-bg-grid {
+        display: flex;
+        justify-content: space-between;
+        background-color: $blanco;
+        opacity: 80%;
+        padding: .8rem;
+
+        a {
+            color: $rosado;
+            text-align: center;
+            font-size: .99rem;
+            letter-spacing: .2rem;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        @media (max-width:1115px) {
+            padding-top: .15rem;
+            padding-bottom: .15rem;
+
+            a {
+                letter-spacing: .5rem;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width:912px) {
+            a {
+                letter-spacing: .2rem;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width:760px) {
+            border-radius: 1rem;
+
+            a {
+                letter-spacing: .6rem;
+            }
+        }
+
+        @media (max-width:570px) {
+            border-radius: 1rem;
+
+            a {
+                letter-spacing: .3rem;
+            }
+        }
+    }
+}
+
+.grid-4 {
+    display: grid;
+    grid-area: grid-4;
+    background-image: url(../img/flores.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+
+    .div-bg-grid {
+        display: flex;
+        justify-content: space-between;
+        background-color: $blanco;
+        opacity: 80%;
+        padding: .8rem;
+
+        a {
+            color: $rosado;
+            text-align: center;
+            font-size: .99rem;
+            letter-spacing: .2rem;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        @media (max-width:1115px) {
+            padding-top: .15rem;
+            padding-bottom: .15rem;
+
+            a {
+                letter-spacing: .5rem;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width:912px) {
+            a {
+                letter-spacing: .2rem;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width:760px) {
+            border-radius: 1rem;
+
+            a {
+                letter-spacing: .6rem;
+            }
+        }
+
+        @media (max-width:570px) {
+            border-radius: 1rem;
+
+            a {
+                letter-spacing: .3rem;
+            }
+        }
+    }
+}
+
+.grid-5 {
+    display: grid;
+    grid-area: grid-5;
+    background-image: url(../img/dmt.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+
+    .div-bg-grid {
+        display: flex;
+        justify-content: space-between;
+        background-color: $blanco;
+        opacity: 80%;
+        padding: .8rem;
+        padding-top: .15rem;
+        padding-bottom: .15rem;
+
+        a {
+            color: $rosado;
+            text-align: center;
+            font-size: .99rem;
+            letter-spacing: .3rem;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        @media (max-width:1115px) {
+            padding-top: .15rem;
+            padding-bottom: .15rem;
+
+            a {
+                letter-spacing: .2rem;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width:1009px) {
+            a {
+                letter-spacing: .1rem;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width:760px) {
+            border-radius: 1rem;
+
+            a {
+                letter-spacing: .6rem;
+            }
+        }
+
+        @media (max-width:570px) {
+            border-radius: 1rem;
+
+            a {
+                letter-spacing: .2rem;
+            }
+        }
+    }
+}
+
+.grid-6 {
+    display: grid;
+    grid-area: grid-6;
+    background-image: url(../img/meditacion.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+
+    .div-bg-grid {
+        display: flex;
+        justify-content: center;
+        background-color: $blanco;
+        opacity: 80%;
+        padding: .8rem;
+
+        a {
+            color: $rosado;
+            text-align: center;
+            font-size: .99rem;
+            letter-spacing: .3rem;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        @media (max-width:1115px) {
+            padding-top: .15rem;
+            padding-bottom: .15rem;
+
+            a {
+                letter-spacing: .5rem;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width:912px) {
+            a {
+                letter-spacing: .2rem;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width:760px) {
+            border-radius: 1rem;
+
+            a {
+                letter-spacing: .6rem;
+            }
+        }
+
+        @media (max-width:570px) {
+            border-radius: 1rem;
+
+            a {
+                letter-spacing: .3rem;
+            }
+        }
+    }
+}
+
+.grid-7 {
+    display: grid;
+    grid-area: grid-7;
+    background-image: url(../img/cursos.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+
+    .div-bg-grid {
+        display: flex;
+        justify-content: space-between;
+        background-color: $blanco;
+        opacity: 80%;
+        padding: .8rem;
+
+        a {
+            color: $rosado;
+            text-align: center;
+            font-size: .99rem;
+            letter-spacing: .65rem;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        @media (max-width:1115px) {
+            padding-top: .15rem;
+            padding-bottom: .15rem;
+
+            a {
+                letter-spacing: .6rem;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width:760px) {
+            border-radius: 1rem;
+
+            a {
+                letter-spacing: .6rem;
+            }
+        }
+
+        @media (max-width:570px) {
+            border-radius: 1rem;
+
+            a {
+                letter-spacing: .3rem;
+            }
+        }
+
+    }
+}
+
+.contenedor-sobre-mi {
+    .grid-1-sobre-mi {
         display: block;
         justify-content: center;
-        padding-left: 4rem;
-        padding-right: 4rem;
+        padding-right: 1rem;
+        margin-left: .5rem;
 
         overflow: auto;
 
         .subtitulo-1 {
-            letter-spacing: .8rem;
+            text-align: center;
+            font-size: 1.5rem;
         }
 
-        h1 {
-            letter-spacing: 1rem;
+        .div-titulo-principal {
+            h2 {
+                text-transform: uppercase;
+                font-weight: 100;
+                font-size: 4.5rem;
+                letter-spacing: .5rem;
+                color: $rosado;
+
+                @media (max-width:1145px) {
+                    letter-spacing: .3rem;
+                }
+
+                @media (max-width:881px) {
+                    letter-spacing: .1rem;
+                }
+
+                @media (max-width:561px) {
+                    font-size: 3rem;
+                    letter-spacing: .8rem;
+                }
+
+                @media (max-width:425px) {
+                    font-size: 2.9rem;
+                    letter-spacing: .2rem;
+                }
+            }
         }
 
         .subtitulo-2 {
-            letter-spacing: 1.5rem;
+            text-align: center;
+            letter-spacing: 1rem;
+            font-weight: 300;
+            font-size: 1.5rem;
+
+            @media (max-width:1162px) {
+                font-size: 1rem;
+            }
+
+            @media (max-width:880px) {
+                font-weight: 200;
+                letter-spacing: 1rem;
+            }
+
+            @media (max-width:561px) {
+                letter-spacing: .8rem;
+            }
+
+            @media (max-width:425px) {
+                letter-spacing: .5rem;
+            }
         }
 
+        .sobre-mi {
+            height: auto;
+            text-align: left;
+            font-size: 1rem;
+            color: $gris;
+            font-weight: 300;
+            overflow: scroll;
+
+            .sobre-mi-p-1 {
+                &::first-letter {
+                    font-size: 2rem;
+                    font-weight: 500
+                }
+            }
+
+            a {
+                color: $celeste;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    @media (max-width:1115px) {
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "grid-1 grid-2"
+            "grid-1 grid-3"
+            "grid-1 grid-4"
+            "grid-1 grid-5"
+            "grid-1 grid-6"
+            "grid-1 grid-7";
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        .grid-1 {
+            height: auto;
+        }
+    }
+
+    @media (max-width:881px) {
+        height: auto;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 8fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "grid-1"
+            "grid-2"
+            "grid-3"
+            "grid-4"
+            "grid-5"
+            "grid-6"
+            "grid-7";
+
+        padding-bottom: 2rem;
+
+        .div-bg-grid {
+            border-radius: 1rem;
+        }
+    }
+
+    @media (max-width:857px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: 0;
+    }
+
+}
+
+.contenedor-terapias {
+    .grid-1-terapias {
+        display: block;
+        justify-content: center;
+        overflow: auto;
+        margin-right: 1rem;
+        padding-right: 1rem;
+
+        .subtitulo-1 {
+            text-align: center;
+            font-size: 1.5rem;
+            letter-spacing: .6rem;
+
+            @media (max-width:555px) {
+                letter-spacing: .2rem;
+            }
+        }
+
+        .div-titulo-principal {
+            h2 {
+                text-transform: uppercase;
+                font-weight: 100;
+                font-size: 4.5rem;
+                letter-spacing: .5rem;
+                color: $rosado;
+
+                @media (max-width:1145px) {
+                    letter-spacing: .3rem;
+                }
+
+                @media (max-width:881px) {
+                    letter-spacing: .1rem;
+                }
+
+                @media (max-width:561px) {
+                    font-size: 3rem;
+                    letter-spacing: .8rem;
+                }
+            }
+        }
+
+        .div-sub-2 {
+            margin-left: 1rem;
+            margin-right: 1rem;
+
+            @media (max-width:945px) {
+                margin-left: 5rem;
+                margin-right: 5rem;
+            }
+
+            @media (max-width:844px) {
+                margin-left: 2rem;
+                margin-right: 2rem;
+            }
+
+            @media (max-width:570px) {
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+
+            @media (max-width:500px) {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+
+        .subtitulo-2 {
+            text-align: center;
+            font-size: 1.5rem;
+            letter-spacing: .1rem;
+
+            @media (max-width:1158px) {
+                font-size: 1.3rem;
+            }
+
+            @media (max-width:555px) {
+                letter-spacing: 0;
+            }
+
+            @media (max-width:492px) {
+                font-size: 1rem;
+            }
+        }
+
+        .terapia {
+            display: block;
+            justify-content: left;
+            text-align: left;
+            border-left: solid 4px $celeste;
+            gap: 1rem;
+            padding-left: .5rem;
+
+            .terapia-div-1 {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+
+                h4 {
+                    color: $gris;
+                    text-transform: uppercase;
+                    letter-spacing: .22rem;
+                    font-size: 2rem;
+                    padding-bottom: .5rem;
+
+                    @media (max-width:478px) {
+                        font-size: 1.5rem;
+                        letter-spacing: .1rem;
+                    }
+
+                    mark {
+                        background-color: $celeste;
+                        opacity: 80%;
+                    }
+                }
+
+                h5 {
+                    color: $celeste;
+                    text-transform: uppercase;
+                    font-size: 1.4rem;
+                    letter-spacing: .2rem;
+
+                    @media (max-width:478px) {
+                        font-size: 1rem;
+                        letter-spacing: 0;
+                    }
+
+                    @media (max-width:393px) {
+                        font-size: .5rem;
+                        letter-spacing: 0;
+                    }
+                }
+
+                p {
+                    font-size: .8rem;
+                    color: $gris;
+                }
+
+                a {
+                    color: $gris;
+                    font-size: 1rem;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    background-color: $celeste;
+                }
+            }
+
+            .accordion-item {
+                font-family: 'Montserrat', sans-serif;
+                font-size: .8rem;
+
+                .accordion-button {
+                    background-color: $celeste;
+                }
+            }
+        }
+    }
+
+    @media (max-width:1115px) {
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "grid-1 grid-2"
+            "grid-1 grid-3"
+            "grid-1 grid-4"
+            "grid-1 grid-5"
+            "grid-1 grid-6"
+            "grid-1 grid-7";
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        .grid-1 {
+            height: auto;
+        }
+    }
+
+    @media (max-width:946px) {
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 8fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "grid-1"
+            "grid-2"
+            "grid-3"
+            "grid-4"
+            "grid-5"
+            "grid-6"
+            "grid-7";
+
+        padding-right: 0;
+
+        .div-bg-grid {
+            border-radius: 1rem;
+            background-size: cover;
+        }
+    }
+}
+
+.contenedor-cursos {
+
+    .grid-1-cursos {
+        display: flex;
+        justify-content: center;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        overflow: auto;
+
+        @media (max-width:1115px){
+            overflow: none;
+            height: max-content;
+        }
+
+        .subtitulo-1 {
+            font-size: 1.5rem;
+            letter-spacing: .8rem;
+        }
+
+        .titulo-cursos {
+            text-transform: uppercase;
+            font-weight: 100;
+            font-size: 4.5rem;
+            letter-spacing: .5rem;
+            color: $rosado;
+        }
+
+        .subtitulo-2 {
+            letter-spacing: 1rem;
+            border-bottom: solid 1px $celeste;
+        }
+
+    
         .curso-1 {
             display: block;
             justify-content: center;
             text-align: left;
+            padding-top: 1rem;
 
-            h4 {
-                color: $celeste;
-                text-transform: uppercase;
-                letter-spacing: .2rem;
+            .titulo-curso-1{
+                .dias {
+                    text-transform: uppercase;
+                }
             }
 
-            mark {
-                background-color: $celeste;
+            h3 {
+                    font-size: 1.5rem;
+                    color: $celeste;
+                    text-transform: uppercase;
+                    letter-spacing: .1rem;
+                    padding-bottom: .1rem;
+
+                    mark {
+                        background-color: $celeste;
+                        opacity: 70%;
+                    }
+            }
+
+            h4 {
                 text-transform: uppercase;
-                font-size: 1rem;
-                letter-spacing: .65rem;
+                color: $celeste;
+                letter-spacing: .1rem;
+                text-align: left;
             }
 
             h5 {
+                font-size: .5rem;
+                text-transform: uppercase;
                 color: $celeste;
-            }
-
-            p {
-                font-size: .8rem;
-                color: $gris;
+                letter-spacing: .1rem;
+                text-align: left;
             }
 
             a {
@@ -221,23 +956,68 @@
                 background-color: $celeste;
                 letter-spacing: .5rem;
             }
+
+            .descripcion {
+                h4{
+                    padding-top: 1rem;
+                }
+            }
         }
     }
+
+    @media (max-width:1115px){
+        grid-template-columns: 1fr;
+        grid-template-rows: 8fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "grid-1"
+            "grid-2"
+            "grid-3"
+            "grid-4"
+            "grid-5"
+            "grid-6"
+            "grid-7";
+
+        padding-right: 0;
+        height: auto;
+
+        .div-bg-grid {
+            border-radius: 1rem;
+            background-size: cover;
+        }
+    }
+}
+
+.contenedor-blog {
 
     .grid-1-blog {
         display: block;
         justify-content: center;
-        padding-left: 4rem;
-        padding-right: 4rem;
-
+        padding: 0;
         overflow: auto;
 
-        .subtitulo-1 {
-            letter-spacing: 1.2rem;
+        @media (max-width:1115px){
+            overflow: none;
+            height: max-content;
         }
 
-        .subtitulo-2 {
-            letter-spacing: .45rem;
+        .caja-titulo {
+            .subtitulo-1 {
+                font-size: 1rem;
+                letter-spacing: .5rem;
+            }
+    
+            .titulo-blog {
+                text-transform: uppercase;
+                font-weight: 100;
+                font-size: 4.5rem;
+                letter-spacing: .5rem;
+                color: $rosado;
+    
+            }
+    
+            .subtitulo-2 {
+                letter-spacing: .45rem;
+            }
         }
 
         h4 {
@@ -271,14 +1051,23 @@
 
         }
     }
+}
+
+.contenedor-contacto {
 
     .grid-1-contacto {
         display: block;
         justify-content: center;
         padding-left: 4rem;
         padding-right: 4rem;
-
         overflow: scroll;
+
+        @media (max-width:1115px){
+            overflow: none;
+            height: max-content;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
 
         .titulo-contacto {
             display: block;
@@ -287,11 +1076,22 @@
             .subtitulo-1 {
                 text-align: center;
                 letter-spacing: 2.5rem;
+                @media (max-width:495px) {
+                    font-size: 1rem;
+                    letter-spacing: 1rem;
+                }
             }
 
-            h1 {
-                text-align: center;
-                letter-spacing: 2rem;
+            .titulo-contacto {
+                text-transform: uppercase;
+                font-weight: 100;
+                font-size: 4.5rem;
+                letter-spacing: .5rem;
+                color: $rosado;
+
+                @media (max-width:495px) {
+                    font-size: 3.5rem;
+                }
             }
 
             .subtitulo-2 {
@@ -316,6 +1116,10 @@
                 label {
                     color: $gris;
                     opacity: 80%;
+
+                    @media (max-width:621px){
+                       font-size: 1rem;
+                    }
                 }
 
                 input {
@@ -367,573 +1171,17 @@
             }
         }
     }
-}
-
-
-
-.grid-2 {
-    display: grid;
-    grid-area: grid-2;
-    background-image: url(../img/yoga.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    justify-content: center;
-    align-content: center;
-
-    .div-bg-grid {
-        display: flex;
-        justify-content: center;
-        background-color: $blanco;
-        opacity: 80%;
-        padding: .8rem;
-   
-        a {
-            color: $rosado;
-            text-align: center;
-            font-size: .99rem;
-            letter-spacing: .3rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-
-        @media (max-width:1115px){
-            padding-top: .15rem;
-            padding-bottom: .15rem;
-
-            a {
-                letter-spacing: .6rem;
-                font-size: 1rem;
-            }   
-        }
-        
-        @media (max-width:912px){
-            a {
-                letter-spacing: .6rem;
-                font-size: 1rem;
-            }   
-        }
-        @media (max-width:760px){
-            border-radius: 1rem;
-            a {
-                letter-spacing: .6rem;
-                font-size: 1rem;
-            }   
-        }
-        @media (max-width:570px){
-            border-radius: 1rem;
-            a {
-                letter-spacing: .3rem;
-            }   
-        }
-    }
-}
-
-.grid-3 {
-    display: grid;
-    grid-area: grid-3;
-    background-image: url(../img/tarot.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-
-    .div-bg-grid {
-        display: flex;
-        justify-content: space-between;
-        background-color: $blanco;
-        opacity: 80%;
-        padding: .8rem;
-
-        a {
-            color: $rosado;
-            text-align: center;
-            font-size: .99rem;
-            letter-spacing: .2rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-
-        @media (max-width:1115px){
-            padding-top: .15rem;
-            padding-bottom: .15rem;
-
-            a {
-                letter-spacing: .5rem;
-                font-size: 1rem;
-            }   
-        }
-
-        @media (max-width:912px){
-            a {
-                letter-spacing: .2rem;
-                font-size: 1rem;
-            }   
-        }
-        @media (max-width:760px){
-            border-radius: 1rem;
-            a {
-                letter-spacing: .6rem;
-            }   
-        }
-        @media (max-width:570px){
-            border-radius: 1rem;
-            a {
-                letter-spacing: .3rem;
-            }   
-        }
-    }   
-}
-
-.grid-4 {
-    display: grid;
-    grid-area: grid-4;
-    background-image: url(../img/flores.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-
-    .div-bg-grid {
-        display: flex;
-        justify-content: space-between;
-        background-color: $blanco;
-        opacity: 80%;
-        padding: .8rem;
-
-        a {
-            color: $rosado;
-            text-align: center;
-            font-size: .99rem;
-            letter-spacing: .2rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-
-        @media (max-width:1115px){
-            padding-top: .15rem;
-            padding-bottom: .15rem;
-
-            a {
-                letter-spacing: .5rem;
-                font-size: 1rem;
-            }   
-        }
-        @media (max-width:912px){
-            a {
-                letter-spacing: .2rem;
-                font-size: 1rem;
-            }   
-        }
-        @media (max-width:760px){
-            border-radius: 1rem;
-            a {
-                letter-spacing: .6rem;
-            }   
-        }
-        @media (max-width:570px){
-            border-radius: 1rem;
-            a {
-                letter-spacing: .3rem;
-            }   
-        }
-    }    
-}
-
-.grid-5 {
-    display: grid;
-    grid-area: grid-5;
-    background-image: url(../img/dmt.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-
-    .div-bg-grid {
-        display: flex;
-        justify-content: space-between;
-        background-color: $blanco;
-        opacity: 80%;
-        padding: .8rem;
-        padding-top: .15rem;
-        padding-bottom: .15rem;
-
-        a {
-            color: $rosado;
-            text-align: center;
-            font-size: .99rem;
-            letter-spacing: .3rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-
-        @media (max-width:1115px){
-            padding-top: .15rem;
-            padding-bottom: .15rem;
-
-            a {
-                letter-spacing: .3rem;
-                font-size: 1rem;
-            }   
-        }
-        @media (max-width:1009px){
-            a {
-                letter-spacing: .1rem;
-                font-size: 1rem;
-            }   
-        }
-        @media (max-width:760px){
-            border-radius: 1rem;
-            a {
-                letter-spacing: .6rem;
-            }   
-        }
-        @media (max-width:570px){
-            border-radius: 1rem;
-            a {
-                letter-spacing: .2rem;
-            }   
-        }
-    } 
-}
-
-.grid-6 {
-    display: grid;
-    grid-area: grid-6;
-    background-image: url(../img/meditacion.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-
-    .div-bg-grid {
-        display: flex;
-        justify-content: center;
-        background-color: $blanco;
-        opacity: 80%;
-        padding: .8rem;
-
-        a {
-            color: $rosado;
-            text-align: center;
-            font-size: .99rem;
-            letter-spacing: .3rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-
-        @media (max-width:1115px){
-            padding-top: .15rem;
-            padding-bottom: .15rem;
-
-            a {
-                letter-spacing: .5rem;
-                font-size: 1rem;
-            }   
-        }
-        @media (max-width:912px){
-            a {
-                letter-spacing: .2rem;
-                font-size: 1rem;
-            }   
-        }
-        @media (max-width:760px){
-            border-radius: 1rem;
-            a {
-                letter-spacing: .6rem;
-            }   
-        }
-        @media (max-width:570px){
-            border-radius: 1rem;
-            a {
-                letter-spacing: .3rem;
-            }   
-        }
-    }   
-}
-
-.grid-7 {
-    display: grid;
-    grid-area: grid-7;
-    background-image: url(../img/cursos.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-
-    .div-bg-grid {
-        display: flex;
-        justify-content: space-between;
-        background-color: $blanco;
-        opacity: 80%;
-        padding: .8rem;
-        
-        a {
-            color: $rosado;
-            text-align: center;
-            font-size: .99rem;
-            letter-spacing: .65rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-
-        @media (max-width:1115px){
-            padding-top: .15rem;
-            padding-bottom: .15rem;
-
-            a {
-                letter-spacing: .6rem;
-                font-size: 1rem;
-            }   
-        }
-        @media (max-width:760px){
-            border-radius: 1rem;
-            a {
-                letter-spacing: .6rem;
-            }   
-        }
-        @media (max-width:570px){
-            border-radius: 1rem;
-            a {
-                letter-spacing: .3rem;
-            }   
-        }
-        
-    }
-}
-
-.contenedor-sobre-mi{
-
-
-    .grid-1-sobre-mi {
-        display: block;
-        justify-content: center;
-        padding-left: 4rem;
-        padding-right: 4rem;
-
-        overflow: auto;
-
-        .subtitulo-1 {
-            text-align: center;
-            font-size: 1.5rem;
-        }
-
-        .div-titulo-principal{
-            h2 {
-                text-transform: uppercase;
-                font-weight: 100;
-                font-size: 4.5rem;
-                letter-spacing: .5rem;
-                color: $rosado;
-
-                @media (max-width:1145px){
-                    letter-spacing: .3rem;
-                }
-                @media (max-width:881px){
-                    letter-spacing: .1rem;
-                }
-                @media (max-width:561px){
-                    font-size: 3rem;
-                    letter-spacing: .8rem; 
-                }
-            }
-        }
-
-        .subtitulo-2 {
-            text-align: center;
-            letter-spacing: 1rem;
-            font-weight: 300;
-            font-size: 1.5rem;
-
-            @media (max-width:1162px){
-                font-size: 1rem;
-            }
-            @media (max-width:880px){
-                font-weight: 200;
-                letter-spacing: 1rem; 
-            }
-            @media (max-width:561px){
-                font-size: .8rem;
-                letter-spacing: .8rem; 
-            }
-        }
-
-        .sobre-mi {
-            height: auto;
-            text-align: left;
-            font-size: 1rem;
-            color: $gris;
-            font-weight: 300;
-            overflow: scroll;
-
-            .sobre-mi-p-1 {
-                &::first-letter {
-                    font-size: 2rem;
-                    font-weight: 500
-                }
-            }
-
-            a {
-                color: $celeste;
-                font-size: 1.5rem;
-            }
-        }
-    }
 
     @media (max-width:1115px){
-        display: grid;
-        grid-template-columns: 4fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        "grid-1 grid-2"
-        "grid-1 grid-3"
-        "grid-1 grid-4"
-        "grid-1 grid-5"
-        "grid-1 grid-6"
-        "grid-1 grid-7";
-        padding-top: 0;
-        padding-bottom: 0;
-        padding-left: 2rem;
-        padding-right: 2rem;
-
-        .grid-1 {
-            height: auto;
-        }
-    }
-
-    @media (max-width:881px) {
-        height: auto;
         
-        grid-template-columns: 1fr;
-        grid-template-rows: 8fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        "grid-1"
-        "grid-2"
-        "grid-3"
-        "grid-4"
-        "grid-5"
-        "grid-6"
-        "grid-7";
-
-        padding-bottom: 2rem;
-    }
-
-    @media (max-width:857px) {
         padding-left: 1rem;
         padding-right: 1rem;
-        margin: 0;
+
+        height: auto;
+
+        .footer {
+            position: inherit;
+        }
     }
-    
 }
 
-.contenedor-terapias{
-    .grid-1-terapias {
-        display: block;
-        justify-content: center;
-        padding-left: 4rem;
-        padding-right: 4rem;
-
-        overflow: auto;
-
-        .subtitulo-1 {
-            text-align: center;
-            font-size: 1.5rem;
-            letter-spacing: .6rem;
-        }
-
-        .div-titulo-principal{
-            h2 {
-                text-transform: uppercase;
-                font-weight: 100;
-                font-size: 4.5rem;
-                letter-spacing: .5rem;
-                color: $rosado;
-
-                @media (max-width:1145px){
-                    letter-spacing: .3rem;
-                }
-                @media (max-width:881px){
-                    letter-spacing: .1rem;
-                }
-                @media (max-width:561px){
-                    font-size: 3rem;
-                    letter-spacing: .8rem; 
-                }
-            }
-        }
-
-        .subtitulo-2 {
-            text-align: center;
-            letter-spacing: .1rem;
-        }
-
-        .terapia {
-            display: block;
-            justify-content: left;
-            text-align: left;
-            border-left: solid 4px $celeste;
-            gap: 1rem;
-            padding-left: .5rem;
-
-            .terapia-div-1{
-                padding-top: 1rem;
-                padding-bottom: 1rem;
-
-                h4 {
-                    color: $celeste;
-                    text-transform: uppercase;
-                    letter-spacing: .22rem;
-                    font-size: 2rem;
-                }
-    
-                mark {
-                    background-color: $celeste;
-                    text-transform: uppercase;
-                    font-size: 1rem;
-                    letter-spacing: .2rem;
-                }
-    
-                h5 {
-                    color: $celeste;
-                }
-    
-                p {
-                    font-size: .8rem;
-                    color: $gris;
-                }
-    
-                a {
-                    color: $gris;
-                    font-size: 1rem;
-                    font-weight: 300;
-                    text-transform: uppercase;
-                    background-color: $celeste;
-                }
-            }
-
-            .accordion-item {
-                font-family: 'Montserrat', sans-serif;
-                font-size: .8rem;
-
-                .accordion-button {
-                    background-color: $celeste;
-                }
-
-                .preguntas-frecuentes {
-
-                }
-            }
-
-
-        }
-    }
-
-    .grid-2 {
-        
-    }
-}

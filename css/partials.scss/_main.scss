@@ -15,26 +15,29 @@
     padding-left: 4rem;
     padding-right: 4rem;
     
+    
     @media (max-width: 1115px) {
+        display: grid;
         grid-template-columns: 2fr 2fr 2fr;
-        grid-template-rows: 4fr 2fr 2fr;
+        grid-template-rows: 1fr 2fr 2fr;
         grid-template-areas: 
         "grid-1 grid-1 grid-1"
         "grid-2 grid-3 grid-4"
         "grid-5 grid-6 grid-7";
+
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
-    @media (max-width:670px) {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        "grid-1 grid-1"
-        "grid-2 grid-3"
-        "grid-4 grid-5"
-        "grid-6 grid-7";
+    @media (max-width: 856px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
-    @media (max-width:410px) {
+    @media (max-width:760px) {
+        height: 100vh;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8,1fr);
         grid-template-areas: 
@@ -46,19 +49,21 @@
         "grid-6"
         "grid-7"
         "grid-8";
-
     }
 
-    @media (max-width:387px) {
-        margin: 2rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        padding: 2rem;
+    @media (max-width:480px) {
+        height: 100vh;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    @media (max-width:451px){
+        padding: 0;
+        margin: 0;
     }
 
     .cajas {
-        border-radius: .5rem;
         margin: .5rem;
+        border-radius: 1rem;
 
         a {
             object-fit: contain;
@@ -74,25 +79,6 @@
         align-items: center;
         text-align: center;
 
-        h1 {
-            display: grid;
-            text-transform: uppercase;
-            font-weight: 100;
-            font-size: 5rem;
-            letter-spacing: .8rem;
-            color: $rosado;
-            justify-items: center;
-
-            @media (max-width: 1115px) {
-                font-size: 3rem;
-                letter-spacing: .1rem;
-            }
-
-            @media (max-width:387px) {
-                font-size: 2rem;
-            }
-        }
-
         .subtitulo-1 {
             letter-spacing: 1rem;
             font-weight: 300;
@@ -106,6 +92,10 @@
                 font-size: 1.5rem;
                 letter-spacing: .5rem;
             }
+            @media (max-width: 490px) {
+                font-size: .8rem;
+                letter-spacing: .5rem;
+            }
         }
 
         .div-titulo-principal {
@@ -115,19 +105,46 @@
             align-items: center;
             justify-content: center;
 
+            .yog {
+                display: block;
+                text-transform: uppercase;
+                font-weight: 100;
+                font-size: 4.5rem;
+                letter-spacing: .5rem;
+                color: $rosado;
+                justify-items: center;
 
+                @media (max-width:1163px) {
+                    letter-spacing: .1rem;
+                }
+                @media (max-width:552px) {
+                    font-size: 4rem;
+                }      
+                @media (max-width:490px) {
+                    font-size: 3rem;
+                }
+                @media (max-width:421px) {
+                    font-size: 2.5rem;
+                    letter-spacing: .2rem;
+                }
 
-            .logo-titulo {
-                margin: .2rem;
-
-                @media (max-width: 1106px) {
-                    height: 2.2rem;
-                    align-items: center;
-                    margin-bottom: .7rem;
-
+                .logo-titulo {
+                    margin-bottom: .8rem;
+    
+                    @media (max-width: 552px) {
+                        height: 3rem;
+                        align-items: center;
+                        margin-bottom: .7rem;
+                    }
+                    @media (max-width:490px) {
+                        height: 2.5rem;
+                    }
+                    @media (max-width:421px) {
+                        height: 1.9rem;
+                        margin-top: .2rem;
+                    }
                 }
             }
-
         }
 
         .subtitulo-2 {
@@ -138,141 +155,15 @@
             opacity: 60%;
             padding-bottom: 1rem;
 
-            @media (max-width: 1106px) {
-                font-size: 1rem;
+            @media (max-width: 718px) {
+                font-size: 1.2rem;
                 letter-spacing: .5rem;
             }
-
-            @media (max-width:387px) {
-                font-size: .6rem;
-            }
-        }
-    }
-
-    .grid-1-sobre-mi {
-        display: block;
-        justify-content: center;
-        padding-left: 4rem;
-        padding-right: 4rem;
-
-        overflow: auto;
-
-        .subtitulo-1 {
-            text-align: center;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        .subtitulo-2 {
-            text-align: center;
-            letter-spacing: 1rem;
-            font-weight: 400;
-        }
-
-        .sobre-mi {
-            text-align: left;
-            font-size: 1rem;
-            color: $gris;
-            font-weight: 300;
-
-
-
-            .sobre-mi-p-1 {
-                &::first-letter {
-                    font-size: 2rem;
-                    font-weight: 500
-                }
-            }
-
-            a {
-                color: $celeste;
-                font-size: 1.5rem;
-            }
-
-        }
-    }
-
-    .grid-1-terapias {
-        display: block;
-        justify-content: center;
-        padding-left: 4rem;
-        padding-right: 4rem;
-
-        overflow: auto;
-
-        .subtitulo-1 {
-            text-align: center;
-            letter-spacing: .6rem;
-        }
-
-        h1 {
-            text-align: center;
-            justify-content: center;
-            letter-spacing: 2rem;
-        }
-
-        .subtitulo-2 {
-            text-align: center;
-            letter-spacing: .1rem;
-        }
-
-        .terapia {
-            display: block;
-            justify-content: left;
-            text-align: left;
-            border-left: solid 4px $celeste;
-            gap: 1rem;
-            padding-left: .5rem;
-
-            h4 {
-                color: $celeste;
-                text-transform: uppercase;
-                letter-spacing: .22rem;
-                font-size: 2rem;
-            }
-
-            mark {
-                background-color: $celeste;
-                text-transform: uppercase;
-                font-size: 1rem;
-                letter-spacing: .2rem;
-            }
-
-            h5 {
-                color: $celeste;
-            }
-
-            p {
+            @media (max-width: 490px) {
                 font-size: .8rem;
-                color: $gris;
+                letter-spacing: .5rem;
             }
-
-            a {
-                color: $gris;
-                font-size: 1rem;
-                font-weight: 300;
-                text-transform: uppercase;
-                background-color: $celeste;
-            }
-
-            .accordion-item {
-                font-family: 'Montserrat', sans-serif;
-                font-size: .8rem;
-
-                .accordion-button {
-                    background-color: $celeste;
-
-
-                }
-            }
-
         }
-
-
-
-
     }
 
     .grid-1-cursos {
@@ -329,8 +220,6 @@
                 text-transform: uppercase;
                 background-color: $celeste;
                 letter-spacing: .5rem;
-
-
             }
         }
     }
@@ -408,7 +297,6 @@
             .subtitulo-2 {
                 letter-spacing: .35rem;
             }
-
         }
 
         .contacto-1 {
@@ -435,7 +323,6 @@
                     border-color: $celeste;
                     border-radius: .5rem;
                 }
-
             }
 
             .form-2 {
@@ -478,14 +365,9 @@
                     opacity: 60%;
                 }
             }
-
-
         }
-
     }
-
 }
-
 
 
 
@@ -499,29 +381,52 @@
     justify-content: center;
     align-content: center;
 
-
     .div-bg-grid {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         background-color: $blanco;
+        opacity: 80%;
         padding: .8rem;
-    
+   
         a {
             color: $rosado;
-            background-color: $blanco;
-            background-size: cover;
             text-align: center;
             font-size: .99rem;
             letter-spacing: .3rem;
             text-decoration: none;
             text-transform: uppercase;
-    
-            @media (max-width: 1106px) {
-                font-size: .8rem;
-            }
+        }
+
+        @media (max-width:1115px){
+            padding-top: .15rem;
+            padding-bottom: .15rem;
+
+            a {
+                letter-spacing: .6rem;
+                font-size: 1rem;
+            }   
+        }
+        
+        @media (max-width:912px){
+            a {
+                letter-spacing: .6rem;
+                font-size: 1rem;
+            }   
+        }
+        @media (max-width:760px){
+            border-radius: 1rem;
+            a {
+                letter-spacing: .6rem;
+                font-size: 1rem;
+            }   
+        }
+        @media (max-width:570px){
+            border-radius: 1rem;
+            a {
+                letter-spacing: .3rem;
+            }   
         }
     }
-
 }
 
 .grid-3 {
@@ -538,32 +443,47 @@
         display: flex;
         justify-content: space-between;
         background-color: $blanco;
+        opacity: 80%;
         padding: .8rem;
-        padding-top: .15rem;
-        padding-bottom: .15rem;
-
-        @media (max-width:1106px) {
-            padding-top: .15rem;
-            padding-bottom: .15rem;
-        }
 
         a {
             color: $rosado;
-            background-color: $blanco;
-            background-size: cover;
             text-align: center;
             font-size: .99rem;
-            letter-spacing: .13rem;
+            letter-spacing: .2rem;
             text-decoration: none;
             text-transform: uppercase;
-    
-            @media (max-width: 1106px) {
-                font-size: .8rem;
-            }
         }
-    }
 
-    
+        @media (max-width:1115px){
+            padding-top: .15rem;
+            padding-bottom: .15rem;
+
+            a {
+                letter-spacing: .5rem;
+                font-size: 1rem;
+            }   
+        }
+
+        @media (max-width:912px){
+            a {
+                letter-spacing: .2rem;
+                font-size: 1rem;
+            }   
+        }
+        @media (max-width:760px){
+            border-radius: 1rem;
+            a {
+                letter-spacing: .6rem;
+            }   
+        }
+        @media (max-width:570px){
+            border-radius: 1rem;
+            a {
+                letter-spacing: .3rem;
+            }   
+        }
+    }   
 }
 
 .grid-4 {
@@ -573,7 +493,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
     justify-content: center;
     align-items: center;
 
@@ -581,32 +500,46 @@
         display: flex;
         justify-content: space-between;
         background-color: $blanco;
+        opacity: 80%;
         padding: .8rem;
-        padding-top: .15rem;
-        padding-bottom: .15rem;
-
-        @media (max-width:1106px) {
-            padding-top: .15rem;
-            padding-bottom: .15rem;
-        }
 
         a {
             color: $rosado;
-            background: $blanco;
-            background-size: cover;
             text-align: center;
             font-size: .99rem;
-            letter-spacing: .3rem;
+            letter-spacing: .2rem;
             text-decoration: none;
             text-transform: uppercase;
-    
-            @media (max-width: 1106px) {
-                font-size: .8rem;
-            }
         }
-    }
-    
-    
+
+        @media (max-width:1115px){
+            padding-top: .15rem;
+            padding-bottom: .15rem;
+
+            a {
+                letter-spacing: .5rem;
+                font-size: 1rem;
+            }   
+        }
+        @media (max-width:912px){
+            a {
+                letter-spacing: .2rem;
+                font-size: 1rem;
+            }   
+        }
+        @media (max-width:760px){
+            border-radius: 1rem;
+            a {
+                letter-spacing: .6rem;
+            }   
+        }
+        @media (max-width:570px){
+            border-radius: 1rem;
+            a {
+                letter-spacing: .3rem;
+            }   
+        }
+    }    
 }
 
 .grid-5 {
@@ -616,7 +549,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
     justify-content: center;
     align-items: center;
 
@@ -624,28 +556,48 @@
         display: flex;
         justify-content: space-between;
         background-color: $blanco;
+        opacity: 80%;
         padding: .8rem;
         padding-top: .15rem;
         padding-bottom: .15rem;
 
         a {
             color: $rosado;
-            background: $blanco;
-            background-size: cover;
             text-align: center;
             font-size: .99rem;
             letter-spacing: .3rem;
             text-decoration: none;
             text-transform: uppercase;
-    
-            @media (max-width: 1106px) {
-                font-size: .8rem;
-            }
         }
 
-    }
+        @media (max-width:1115px){
+            padding-top: .15rem;
+            padding-bottom: .15rem;
 
-    
+            a {
+                letter-spacing: .3rem;
+                font-size: 1rem;
+            }   
+        }
+        @media (max-width:1009px){
+            a {
+                letter-spacing: .1rem;
+                font-size: 1rem;
+            }   
+        }
+        @media (max-width:760px){
+            border-radius: 1rem;
+            a {
+                letter-spacing: .6rem;
+            }   
+        }
+        @media (max-width:570px){
+            border-radius: 1rem;
+            a {
+                letter-spacing: .2rem;
+            }   
+        }
+    } 
 }
 
 .grid-6 {
@@ -660,33 +612,48 @@
 
     .div-bg-grid {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         background-color: $blanco;
+        opacity: 80%;
         padding: .8rem;
-
-        @media (max-width:1106px) {
-            padding-top: .15rem;
-            padding-bottom: .15rem;
-        }
 
         a {
             color: $rosado;
-            background-color: $blanco;
-            background-size: cover;
             text-align: center;
             font-size: .99rem;
             letter-spacing: .3rem;
             text-decoration: none;
             text-transform: uppercase;
-    
-            @media (max-width: 1106px) {
-                font-size: .8rem;
-            }
         }
 
-    }
+        @media (max-width:1115px){
+            padding-top: .15rem;
+            padding-bottom: .15rem;
 
-    
+            a {
+                letter-spacing: .5rem;
+                font-size: 1rem;
+            }   
+        }
+        @media (max-width:912px){
+            a {
+                letter-spacing: .2rem;
+                font-size: 1rem;
+            }   
+        }
+        @media (max-width:760px){
+            border-radius: 1rem;
+            a {
+                letter-spacing: .6rem;
+            }   
+        }
+        @media (max-width:570px){
+            border-radius: 1rem;
+            a {
+                letter-spacing: .3rem;
+            }   
+        }
+    }   
 }
 
 .grid-7 {
@@ -701,23 +668,272 @@
 
     .div-bg-grid {
         display: flex;
-        justify-items: center;
+        justify-content: space-between;
         background-color: $blanco;
+        opacity: 80%;
         padding: .8rem;
-
+        
         a {
             color: $rosado;
-            background-color: $blanco;
-            background-size: cover;
             text-align: center;
             font-size: .99rem;
-            letter-spacing: .3rem;
+            letter-spacing: .65rem;
             text-decoration: none;
             text-transform: uppercase;
-    
-            @media (max-width: 1106px) {
-                font-size: .8rem;
+        }
+
+        @media (max-width:1115px){
+            padding-top: .15rem;
+            padding-bottom: .15rem;
+
+            a {
+                letter-spacing: .6rem;
+                font-size: 1rem;
+            }   
+        }
+        @media (max-width:760px){
+            border-radius: 1rem;
+            a {
+                letter-spacing: .6rem;
+            }   
+        }
+        @media (max-width:570px){
+            border-radius: 1rem;
+            a {
+                letter-spacing: .3rem;
+            }   
+        }
+        
+    }
+}
+
+.contenedor-sobre-mi{
+
+
+    .grid-1-sobre-mi {
+        display: block;
+        justify-content: center;
+        padding-left: 4rem;
+        padding-right: 4rem;
+
+        overflow: auto;
+
+        .subtitulo-1 {
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        .div-titulo-principal{
+            h2 {
+                text-transform: uppercase;
+                font-weight: 100;
+                font-size: 4.5rem;
+                letter-spacing: .5rem;
+                color: $rosado;
+
+                @media (max-width:1145px){
+                    letter-spacing: .3rem;
+                }
+                @media (max-width:881px){
+                    letter-spacing: .1rem;
+                }
+                @media (max-width:561px){
+                    font-size: 3rem;
+                    letter-spacing: .8rem; 
+                }
             }
         }
+
+        .subtitulo-2 {
+            text-align: center;
+            letter-spacing: 1rem;
+            font-weight: 300;
+            font-size: 1.5rem;
+
+            @media (max-width:1162px){
+                font-size: 1rem;
+            }
+            @media (max-width:880px){
+                font-weight: 200;
+                letter-spacing: 1rem; 
+            }
+            @media (max-width:561px){
+                font-size: .8rem;
+                letter-spacing: .8rem; 
+            }
+        }
+
+        .sobre-mi {
+            height: auto;
+            text-align: left;
+            font-size: 1rem;
+            color: $gris;
+            font-weight: 300;
+            overflow: scroll;
+
+            .sobre-mi-p-1 {
+                &::first-letter {
+                    font-size: 2rem;
+                    font-weight: 500
+                }
+            }
+
+            a {
+                color: $celeste;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    @media (max-width:1115px){
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "grid-1 grid-2"
+        "grid-1 grid-3"
+        "grid-1 grid-4"
+        "grid-1 grid-5"
+        "grid-1 grid-6"
+        "grid-1 grid-7";
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        .grid-1 {
+            height: auto;
+        }
+    }
+
+    @media (max-width:881px) {
+        height: auto;
+        
+        grid-template-columns: 1fr;
+        grid-template-rows: 8fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "grid-1"
+        "grid-2"
+        "grid-3"
+        "grid-4"
+        "grid-5"
+        "grid-6"
+        "grid-7";
+
+        padding-bottom: 2rem;
+    }
+
+    @media (max-width:857px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: 0;
+    }
+    
+}
+
+.contenedor-terapias{
+    .grid-1-terapias {
+        display: block;
+        justify-content: center;
+        padding-left: 4rem;
+        padding-right: 4rem;
+
+        overflow: auto;
+
+        .subtitulo-1 {
+            text-align: center;
+            font-size: 1.5rem;
+            letter-spacing: .6rem;
+        }
+
+        .div-titulo-principal{
+            h2 {
+                text-transform: uppercase;
+                font-weight: 100;
+                font-size: 4.5rem;
+                letter-spacing: .5rem;
+                color: $rosado;
+
+                @media (max-width:1145px){
+                    letter-spacing: .3rem;
+                }
+                @media (max-width:881px){
+                    letter-spacing: .1rem;
+                }
+                @media (max-width:561px){
+                    font-size: 3rem;
+                    letter-spacing: .8rem; 
+                }
+            }
+        }
+
+        .subtitulo-2 {
+            text-align: center;
+            letter-spacing: .1rem;
+        }
+
+        .terapia {
+            display: block;
+            justify-content: left;
+            text-align: left;
+            border-left: solid 4px $celeste;
+            gap: 1rem;
+            padding-left: .5rem;
+
+            .terapia-div-1{
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+
+                h4 {
+                    color: $celeste;
+                    text-transform: uppercase;
+                    letter-spacing: .22rem;
+                    font-size: 2rem;
+                }
+    
+                mark {
+                    background-color: $celeste;
+                    text-transform: uppercase;
+                    font-size: 1rem;
+                    letter-spacing: .2rem;
+                }
+    
+                h5 {
+                    color: $celeste;
+                }
+    
+                p {
+                    font-size: .8rem;
+                    color: $gris;
+                }
+    
+                a {
+                    color: $gris;
+                    font-size: 1rem;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    background-color: $celeste;
+                }
+            }
+
+            .accordion-item {
+                font-family: 'Montserrat', sans-serif;
+                font-size: .8rem;
+
+                .accordion-button {
+                    background-color: $celeste;
+                }
+
+                .preguntas-frecuentes {
+
+                }
+            }
+
+
+        }
+    }
+
+    .grid-2 {
+        
     }
 }

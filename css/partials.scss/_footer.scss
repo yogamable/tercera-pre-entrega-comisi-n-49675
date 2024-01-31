@@ -1,5 +1,4 @@
 .footer {
-    height: 10vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -7,24 +6,35 @@
 
     justify-content: space-between;
     align-items: center;
+    align-content: center;
 
     padding-left: 4rem;
     padding-right: 4rem;
+    margin-top: 1rem;
+
+    @media (max-width: 1114px) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    @media (max-width: 856px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 
     @media (max-width:670px) {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-        "footer-2"
-        "footer-1"
-        "footer-3";
-
+        display: block;
         justify-content: center;
         justify-items: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
     }
-    
-    
 
+    @media (max-width:480px) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
     
     .footer-1 {
         display: grid;
@@ -38,6 +48,10 @@
             color: $celeste;
             font-weight: 300;
             text-decoration: none;            
+        }
+
+        @media (max-width: 670px) {
+            display: none;
         }
     }
 
@@ -76,6 +90,10 @@
         align-items: center;
         align-self: center;
 
+        @media (max-width:670px){
+            justify-content: center;
+        }
+
         .caja-rights {
             display: block;
 
@@ -84,46 +102,16 @@
                 align-content: center;
                 align-items: center;
                 text-align: right;
-                font-size: 1rem;
+                font-size: .8rem;
                 font-weight: 400;
                 color: $celeste;
                 font-style: normal;
 
                 @media (max-width:1115px) {
-                    display: none;
-                }
-            }
-            
-        }
-
-        .caja-rights-2 {
-            display: none;
-
-            @media (max-width:1115px) {
-                display: flex;
-                
-                i {
-                align-content: right;
-                align-items: center;
-                text-align: right;
-                font-size: .8rem;
-                font-weight: 400;
-                color: $celeste;
-                font-style: normal;
-                letter-spacing: .2rem;
-                }
-                
-            }
-
-            @media (max-width:670px) {
-
-                i {
+                    display: flex;
                     font-size: .5rem;
                 }
-            }
+            }         
         }
-        
-        
-    }
-    
+    }   
 }

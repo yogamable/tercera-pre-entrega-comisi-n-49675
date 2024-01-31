@@ -5,6 +5,16 @@ header {
     padding-left: 4rem;
     padding-right: 4rem;
 
+    @media (max-width: 1114px) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    @media (max-width: 856px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
     .menu-nav {
         display: flex;
         justify-content: space-between;
@@ -17,6 +27,29 @@ header {
         display: flex;
         justify-content: left;
         align-items: center;
+
+        @media (max-width: 670px) {
+            display: none;
+        }
+    }
+
+    .logo-nav-2 {
+        display: none;
+        grid-area: "footer-1";
+        justify-content: left;
+        align-items: center;
+        
+        a {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            color: $celeste;
+            font-weight: 300;
+            text-decoration: none;            
+        }
+
+        @media (max-width: 670px) {
+            display: flex;
+        }
     }
 
     .menu-ul {
@@ -26,7 +59,7 @@ header {
         gap: 2.5rem;
         padding-top: 1rem;
 
-        @media (max-width: 1106px) {
+        @media (max-width: 912px) {
             display: none;
         }
 
@@ -45,21 +78,27 @@ header {
             text-decoration: overline;
             text-decoration-color: $rosado;
         }
-
-
     }
 
     .dropdown {
         display: none;
 
-        @media (max-width: 1106px) {
+
+        @media (max-width: 912px) {
             display: block;
 
             .dropdown-toggle {
-                color: $rosado;
-                font-size: 2rem;
+                display: flex;
+                color: $blanco;
+                font-size: 3rem;
                 background-color: $blanco;
+                flex-direction: row-reverse;
+
+                .bi {
+                    color: $rosado;
+                }
             }
+
 
         }
     }

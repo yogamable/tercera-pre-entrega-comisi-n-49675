@@ -100,10 +100,10 @@ header .dropdown {
   header .dropdown .dropdown-toggle {
     display: flex;
     color: #fff;
-    font-size: 3rem;
-    background-color: #fff;
+    font-size: 4rem;
+    background-color: transparent;
     flex-direction: row-reverse;
-    border-color: transparent;
+    border: none;
   }
   header .dropdown .dropdown-toggle .bi {
     color: #E47264;
@@ -200,10 +200,10 @@ header .dropdown {
   header .dropdown .dropdown-toggle {
     display: flex;
     color: #fff;
-    font-size: 3rem;
-    background-color: #fff;
+    font-size: 4rem;
+    background-color: transparent;
     flex-direction: row-reverse;
-    border-color: transparent;
+    border: none;
   }
   header .dropdown .dropdown-toggle .bi {
     color: #E47264;
@@ -238,14 +238,15 @@ header .dropdown {
   .contenedor {
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-bottom: 1rem;
   }
 }
 @media (max-width: 760px) {
   .contenedor {
     height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 1fr);
-    grid-template-areas: "grid-1" "grid-2" "grid-3" "grid-4" "grid-5" "grid-6" "grid-7" "grid-8";
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "grid-1" "grid-2" "grid-3" "grid-4" "grid-5" "grid-6" "grid-7";
   }
 }
 @media (max-width: 480px) {
@@ -293,12 +294,6 @@ header .dropdown {
     letter-spacing: 0.5rem;
   }
 }
-@media (max-width: 490px) {
-  .contenedor .grid-1 .subtitulo-1 {
-    font-size: 0.8rem;
-    letter-spacing: 0.5rem;
-  }
-}
 .contenedor .grid-1 .div-titulo-principal {
   display: flex;
   margin: 0.5rem;
@@ -332,7 +327,6 @@ header .dropdown {
 }
 @media (max-width: 421px) {
   .contenedor .grid-1 .div-titulo-principal .yog {
-    font-size: 2.5rem;
     letter-spacing: 0.2rem;
   }
 }
@@ -353,7 +347,6 @@ header .dropdown {
 }
 @media (max-width: 421px) {
   .contenedor .grid-1 .div-titulo-principal .yog .logo-titulo {
-    height: 1.9rem;
     margin-top: 0.2rem;
   }
 }
@@ -373,8 +366,10 @@ header .dropdown {
 }
 @media (max-width: 490px) {
   .contenedor .grid-1 .subtitulo-2 {
-    font-size: 0.8rem;
-    letter-spacing: 0.5rem;
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
@@ -726,39 +721,48 @@ header .dropdown {
 .contenedor-sobre-mi .grid-1-sobre-mi {
   display: block;
   justify-content: center;
-  padding-right: 1rem;
-  margin-left: 0.5rem;
+  justify-items: center;
   overflow: auto;
+  margin-right: 0.5rem;
+  padding-right: 0.5rem;
 }
-.contenedor-sobre-mi .grid-1-sobre-mi .subtitulo-1 {
+.contenedor-sobre-mi .grid-1-sobre-mi .caja-titulo {
+  display: block;
+  justify-content: center;
+}
+.contenedor-sobre-mi .grid-1-sobre-mi .caja-titulo .subtitulo-1 {
   text-align: center;
   font-size: 1.5rem;
 }
-.contenedor-sobre-mi .grid-1-sobre-mi .div-titulo-principal h2 {
+.contenedor-sobre-mi .grid-1-sobre-mi .caja-titulo .titulo-sobre-mi {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
   text-transform: uppercase;
   font-weight: 100;
   font-size: 4.5rem;
   letter-spacing: 0.5rem;
   color: #E47264;
+  text-align: left;
 }
 @media (max-width: 1145px) {
-  .contenedor-sobre-mi .grid-1-sobre-mi .div-titulo-principal h2 {
+  .contenedor-sobre-mi .grid-1-sobre-mi .caja-titulo .titulo-sobre-mi {
     letter-spacing: 0.3rem;
   }
 }
 @media (max-width: 881px) {
-  .contenedor-sobre-mi .grid-1-sobre-mi .div-titulo-principal h2 {
+  .contenedor-sobre-mi .grid-1-sobre-mi .caja-titulo .titulo-sobre-mi {
     letter-spacing: 0.1rem;
   }
 }
 @media (max-width: 561px) {
-  .contenedor-sobre-mi .grid-1-sobre-mi .div-titulo-principal h2 {
+  .contenedor-sobre-mi .grid-1-sobre-mi .caja-titulo .titulo-sobre-mi {
     font-size: 3rem;
     letter-spacing: 0.8rem;
   }
 }
 @media (max-width: 425px) {
-  .contenedor-sobre-mi .grid-1-sobre-mi .div-titulo-principal h2 {
+  .contenedor-sobre-mi .grid-1-sobre-mi .caja-titulo .titulo-sobre-mi {
     font-size: 2.9rem;
     letter-spacing: 0.2rem;
   }
@@ -788,15 +792,15 @@ header .dropdown {
 @media (max-width: 425px) {
   .contenedor-sobre-mi .grid-1-sobre-mi .subtitulo-2 {
     letter-spacing: 0.5rem;
+    border-bottom: solid 1px #add6ca;
   }
 }
 .contenedor-sobre-mi .grid-1-sobre-mi .sobre-mi {
   height: auto;
-  text-align: left;
   font-size: 1rem;
+  text-align: left;
   color: #414141;
   font-weight: 300;
-  overflow: scroll;
 }
 .contenedor-sobre-mi .grid-1-sobre-mi .sobre-mi .sobre-mi-p-1::first-letter {
   font-size: 2rem;
@@ -807,7 +811,13 @@ header .dropdown {
   font-size: 1.5rem;
 }
 @media (max-width: 1115px) {
+  .contenedor-sobre-mi .grid-1-sobre-mi .sobre-mi {
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 1115px) {
   .contenedor-sobre-mi {
+    height: auto;
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -816,49 +826,59 @@ header .dropdown {
     padding-bottom: 0;
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-  .contenedor-sobre-mi .grid-1 {
-    height: auto;
+    min-height: 100vh;
   }
 }
-@media (max-width: 881px) {
+@media (max-width: 856px) {
   .contenedor-sobre-mi {
-    height: auto;
     grid-template-columns: 1fr;
-    grid-template-rows: 8fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "grid-1" "grid-2" "grid-3" "grid-4" "grid-5" "grid-6" "grid-7";
-    padding-bottom: 2rem;
   }
   .contenedor-sobre-mi .div-bg-grid {
     border-radius: 1rem;
   }
+  .contenedor-sobre-mi .cajas {
+    background-size: cover;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+  }
 }
-@media (max-width: 857px) {
+@media (max-width: 777px) {
   .contenedor-sobre-mi {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 2rem;
+  }
+  .contenedor-sobre-mi .cajas {
+    background-size: cover;
   }
 }
 
+.contenedor-terapias {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
 .contenedor-terapias .grid-1-terapias {
+  height: auto;
   display: block;
   justify-content: center;
   overflow: auto;
-  margin-right: 1rem;
-  padding-right: 1rem;
 }
 .contenedor-terapias .grid-1-terapias .subtitulo-1 {
   text-align: center;
   font-size: 1.5rem;
-  letter-spacing: 0.6rem;
+  letter-spacing: 0.1rem;
 }
 @media (max-width: 555px) {
   .contenedor-terapias .grid-1-terapias .subtitulo-1 {
     letter-spacing: 0.2rem;
   }
 }
-.contenedor-terapias .grid-1-terapias .div-titulo-principal h2 {
+.contenedor-terapias .grid-1-terapias .titulo-terapias {
+  display: flex;
+  justify-content: center;
   text-transform: uppercase;
   font-weight: 100;
   font-size: 4.5rem;
@@ -866,19 +886,19 @@ header .dropdown {
   color: #E47264;
 }
 @media (max-width: 1145px) {
-  .contenedor-terapias .grid-1-terapias .div-titulo-principal h2 {
+  .contenedor-terapias .grid-1-terapias .titulo-terapias {
     letter-spacing: 0.3rem;
   }
 }
 @media (max-width: 881px) {
-  .contenedor-terapias .grid-1-terapias .div-titulo-principal h2 {
+  .contenedor-terapias .grid-1-terapias .titulo-terapias {
     letter-spacing: 0.1rem;
   }
 }
 @media (max-width: 561px) {
-  .contenedor-terapias .grid-1-terapias .div-titulo-principal h2 {
+  .contenedor-terapias .grid-1-terapias .titulo-terapias {
     font-size: 3rem;
-    letter-spacing: 0.8rem;
+    letter-spacing: 0.7rem;
   }
 }
 .contenedor-terapias .grid-1-terapias .div-sub-2 {
@@ -927,6 +947,8 @@ header .dropdown {
 @media (max-width: 492px) {
   .contenedor-terapias .grid-1-terapias .subtitulo-2 {
     font-size: 1rem;
+    letter-spacing: 0.1rem;
+    border-bottom: solid 1px #add6ca;
   }
 }
 .contenedor-terapias .grid-1-terapias .terapia {
@@ -935,11 +957,11 @@ header .dropdown {
   text-align: left;
   border-left: solid 4px #add6ca;
   gap: 1rem;
-  padding-left: 0.5rem;
 }
 .contenedor-terapias .grid-1-terapias .terapia .terapia-div-1 {
+  margin: 0.5rem;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 .contenedor-terapias .grid-1-terapias .terapia .terapia-div-1 h4 {
   color: #414141;
@@ -1012,22 +1034,47 @@ header .dropdown {
 @media (max-width: 946px) {
   .contenedor-terapias {
     height: auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: 8fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "grid-1" "grid-2" "grid-3" "grid-4" "grid-5" "grid-6" "grid-7";
-    padding-right: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 6fr 0.4fr 0.4fr;
+    grid-template-areas: "grid-1 grid-1 grid-1" "grid-2 grid-3 grid-4" "grid-5 grid-6 grid-7";
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
-  .contenedor-terapias .div-bg-grid {
-    border-radius: 1rem;
+  .contenedor-terapias .cajas {
+    background-repeat: no-repeat;
     background-size: cover;
   }
 }
+@media (max-width: 777px) {
+  .contenedor-terapias {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "grid-1" "grid-2" "grid-3" "grid-4" "grid-5" "grid-6" "grid-7";
+  }
+  .contenedor-terapias .div-bg-grid {
+    border-radius: 1rem;
+  }
+}
 
-.contenedor-cursos .grid-1-cursos {
-  display: flex;
+.contenedor-cursos {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 6fr 2fr 2fr;
+  grid-template-rows: 2fr 2fr 2fr;
+  grid-template-areas: "grid-1 grid-2 grid-3" "grid-1 grid-4 grid-5" "grid-1 grid-6 grid-7";
   justify-content: center;
+  border-top: solid 1px #add6ca;
+  border-bottom: solid 1px #add6ca;
   padding-left: 4rem;
   padding-right: 4rem;
+}
+.contenedor-cursos .grid-1-cursos {
+  display: block;
+  justify-items: left;
+  justify-content: left;
   overflow: auto;
 }
 @media (max-width: 1115px) {
@@ -1037,18 +1084,18 @@ header .dropdown {
     height: max-content;
   }
 }
-.contenedor-cursos .grid-1-cursos .subtitulo-1 {
+.contenedor-cursos .grid-1-cursos .caja-titulo .subtitulo-1 {
   font-size: 1.5rem;
   letter-spacing: 0.8rem;
 }
-.contenedor-cursos .grid-1-cursos .titulo-cursos {
+.contenedor-cursos .grid-1-cursos .caja-titulo .titulo-principal {
   text-transform: uppercase;
   font-weight: 100;
   font-size: 4.5rem;
   letter-spacing: 0.5rem;
   color: #E47264;
 }
-.contenedor-cursos .grid-1-cursos .subtitulo-2 {
+.contenedor-cursos .grid-1-cursos .caja-titulo .subtitulo-2 {
   letter-spacing: 1rem;
   border-bottom: solid 1px #add6ca;
 }
@@ -1056,36 +1103,55 @@ header .dropdown {
   display: block;
   justify-content: center;
   text-align: left;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
 }
-.contenedor-cursos .grid-1-cursos .curso-1 .titulo-curso-1 .dias {
-  text-transform: uppercase;
+.contenedor-cursos .grid-1-cursos .curso-1 .titulos-cursos {
+  border-bottom: solid 1px #add6ca;
+  padding-bottom: 1rem;
 }
-.contenedor-cursos .grid-1-cursos .curso-1 h3 {
+.contenedor-cursos .grid-1-cursos .curso-1 .titulos-cursos .titulo-curso {
   font-size: 1.5rem;
   color: #add6ca;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   padding-bottom: 0.1rem;
 }
-.contenedor-cursos .grid-1-cursos .curso-1 h3 mark {
+.contenedor-cursos .grid-1-cursos .curso-1 .titulos-cursos .titulo-curso mark {
   background-color: #add6ca;
   opacity: 70%;
 }
-.contenedor-cursos .grid-1-cursos .curso-1 h4 {
+.contenedor-cursos .grid-1-cursos .curso-1 .titulos-cursos .subtitulo-curso {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  color: #414141;
+  opacity: 80%;
+}
+.contenedor-cursos .grid-1-cursos .curso-1 .titulos-cursos .dias-curso {
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  color: #add6ca;
+  text-transform: uppercase;
+}
+.contenedor-cursos .grid-1-cursos .curso-1 .descripcion-curso {
+  padding-top: 1rem;
+}
+.contenedor-cursos .grid-1-cursos .curso-1 .descripcion-curso .sub-1 {
+  font-size: 1.2rem;
   text-transform: uppercase;
   color: #add6ca;
   letter-spacing: 0.1rem;
   text-align: left;
+  font-weight: 400;
 }
-.contenedor-cursos .grid-1-cursos .curso-1 h5 {
-  font-size: 0.5rem;
-  text-transform: uppercase;
-  color: #add6ca;
-  letter-spacing: 0.1rem;
-  text-align: left;
+.contenedor-cursos .grid-1-cursos .curso-1 .descripcion-curso p {
+  font-size: 1rem;
+  color: #414141;
 }
-.contenedor-cursos .grid-1-cursos .curso-1 a {
+.contenedor-cursos .grid-1-cursos .curso-1 .descripcion-curso p > .deco {
+  list-style-type: circle;
+}
+.contenedor-cursos .grid-1-cursos .curso-1 .descripcion-curso a {
   color: #414141;
   font-size: 1.2rem;
   font-weight: 300;
@@ -1093,20 +1159,24 @@ header .dropdown {
   background-color: #add6ca;
   letter-spacing: 0.5rem;
 }
-.contenedor-cursos .grid-1-cursos .curso-1 .descripcion h4 {
-  padding-top: 1rem;
-}
 @media (max-width: 1115px) {
   .contenedor-cursos {
     grid-template-columns: 1fr;
     grid-template-rows: 8fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "grid-1" "grid-2" "grid-3" "grid-4" "grid-5" "grid-6" "grid-7";
-    padding-right: 0;
     height: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .contenedor-cursos .div-bg-grid {
     border-radius: 1rem;
     background-size: cover;
+  }
+}
+@media (max-width: 777px) {
+  .contenedor-cursos {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -1124,7 +1194,7 @@ header .dropdown {
   }
 }
 .contenedor-blog .grid-1-blog .caja-titulo .subtitulo-1 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   letter-spacing: 0.5rem;
 }
 .contenedor-blog .grid-1-blog .caja-titulo .titulo-blog {
@@ -1133,6 +1203,11 @@ header .dropdown {
   font-size: 4.5rem;
   letter-spacing: 0.5rem;
   color: #E47264;
+}
+@media (max-width: 777px) {
+  .contenedor-blog .grid-1-blog .caja-titulo .titulo-blog {
+    font-size: 4rem;
+  }
 }
 .contenedor-blog .grid-1-blog .caja-titulo .subtitulo-2 {
   letter-spacing: 0.45rem;

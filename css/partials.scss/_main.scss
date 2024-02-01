@@ -15,7 +15,6 @@
     padding-left: 4rem;
     padding-right: 4rem;
 
-
     @media (max-width: 1115px) {
         display: grid;
         grid-template-columns: 2fr 2fr 2fr;
@@ -34,12 +33,13 @@
     @media (max-width: 856px) {
         padding-left: 1rem;
         padding-right: 1rem;
+        padding-bottom: 1rem;
     }
 
     @media (max-width:760px) {
         height: 100vh;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(8, 1fr);
+        grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas:
             "grid-1"
             "grid-2"
@@ -47,8 +47,7 @@
             "grid-4"
             "grid-5"
             "grid-6"
-            "grid-7"
-            "grid-8";
+            "grid-7";
     }
 
     @media (max-width:480px) {
@@ -93,11 +92,6 @@
                 font-size: 1.5rem;
                 letter-spacing: .5rem;
             }
-
-            @media (max-width: 490px) {
-                font-size: .8rem;
-                letter-spacing: .5rem;
-            }
         }
 
         .div-titulo-principal {
@@ -129,7 +123,6 @@
                 }
 
                 @media (max-width:421px) {
-                    font-size: 2.5rem;
                     letter-spacing: .2rem;
                 }
 
@@ -147,7 +140,6 @@
                     }
 
                     @media (max-width:421px) {
-                        height: 1.9rem;
                         margin-top: .2rem;
                     }
                 }
@@ -168,8 +160,10 @@
             }
 
             @media (max-width: 490px) {
-                font-size: .8rem;
-                letter-spacing: .5rem;
+                font-size: 1rem;
+                letter-spacing: .3rem;
+                margin-left: 1rem;
+                margin-right: 1rem;
             }
         }
     }
@@ -539,78 +533,87 @@
 }
 
 .contenedor-sobre-mi {
+    
     .grid-1-sobre-mi {
         display: block;
         justify-content: center;
-        padding-right: 1rem;
-        margin-left: .5rem;
-
+        justify-items: center;
         overflow: auto;
+        margin-right: .5rem;
+        padding-right: .5rem;
 
-        .subtitulo-1 {
-            text-align: center;
-            font-size: 1.5rem;
-        }
+        .caja-titulo {
+            display: block;
+            justify-content: center;
 
-        .div-titulo-principal {
-            h2 {
+            .subtitulo-1 {
+                text-align: center;
+                font-size: 1.5rem;
+            }
+    
+            .titulo-sobre-mi {
+                display: flex;
+                justify-content: center;
+                justify-items: center;
+
                 text-transform: uppercase;
                 font-weight: 100;
                 font-size: 4.5rem;
                 letter-spacing: .5rem;
                 color: $rosado;
-
+                text-align: left;
+                
                 @media (max-width:1145px) {
                     letter-spacing: .3rem;
                 }
-
+    
                 @media (max-width:881px) {
                     letter-spacing: .1rem;
                 }
-
+    
                 @media (max-width:561px) {
                     font-size: 3rem;
                     letter-spacing: .8rem;
                 }
-
+    
                 @media (max-width:425px) {
                     font-size: 2.9rem;
                     letter-spacing: .2rem;
                 }
             }
         }
-
-        .subtitulo-2 {
-            text-align: center;
-            letter-spacing: 1rem;
-            font-weight: 300;
-            font-size: 1.5rem;
-
-            @media (max-width:1162px) {
-                font-size: 1rem;
-            }
-
-            @media (max-width:880px) {
-                font-weight: 200;
+    
+            .subtitulo-2 {
+                text-align: center;
                 letter-spacing: 1rem;
+                font-weight: 300;
+                font-size: 1.5rem;
+    
+                @media (max-width:1162px) {
+                    font-size: 1rem;
+                }
+    
+                @media (max-width:880px) {
+                    font-weight: 200;
+                    letter-spacing: 1rem;
+                }
+    
+                @media (max-width:561px) {
+                    letter-spacing: .8rem;
+                }
+    
+                @media (max-width:425px) {
+                    letter-spacing: .5rem;
+                    border-bottom: solid 1px $celeste;
+                }
             }
-
-            @media (max-width:561px) {
-                letter-spacing: .8rem;
-            }
-
-            @media (max-width:425px) {
-                letter-spacing: .5rem;
-            }
-        }
 
         .sobre-mi {
             height: auto;
-            text-align: left;
             font-size: 1rem;
+            text-align: left;
             color: $gris;
             font-weight: 300;
-            overflow: scroll;
 
             .sobre-mi-p-1 {
                 &::first-letter {
@@ -623,10 +626,15 @@
                 color: $celeste;
                 font-size: 1.5rem;
             }
+
+            @media (max-width:1115px){
+                margin-left: 1rem;
+            }
         }
     }
 
     @media (max-width:1115px) {
+        height: auto;
         display: grid;
         grid-template-columns: 4fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -641,17 +649,12 @@
         padding-bottom: 0;
         padding-left: 2rem;
         padding-right: 2rem;
-
-        .grid-1 {
-            height: auto;
-        }
+        min-height: 100vh;
     }
 
-    @media (max-width:881px) {
-        height: auto;
-
+    @media (max-width:856px) {
         grid-template-columns: 1fr;
-        grid-template-rows: 8fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas:
             "grid-1"
             "grid-2"
@@ -661,60 +664,71 @@
             "grid-6"
             "grid-7";
 
-        padding-bottom: 2rem;
-
         .div-bg-grid {
             border-radius: 1rem;
         }
+
+        .cajas {
+            background-size: cover;
+            max-height:fit-content;
+        }
     }
 
-    @media (max-width:857px) {
-        padding-left: 1rem;
-        padding-right: 1rem;
-        margin: 0;
-    }
+    @media (max-width:777px) {
+        padding-left: 0;
+        padding-right: 0;
+        margin: 2rem;
 
+        .cajas{
+            background-size: cover;
+        }
+    }
 }
 
 .contenedor-terapias {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+
     .grid-1-terapias {
+        height: auto;
         display: block;
         justify-content: center;
         overflow: auto;
-        margin-right: 1rem;
-        padding-right: 1rem;
 
         .subtitulo-1 {
             text-align: center;
             font-size: 1.5rem;
-            letter-spacing: .6rem;
+            letter-spacing: .1rem;
 
             @media (max-width:555px) {
                 letter-spacing: .2rem;
             }
         }
 
-        .div-titulo-principal {
-            h2 {
-                text-transform: uppercase;
-                font-weight: 100;
-                font-size: 4.5rem;
-                letter-spacing: .5rem;
-                color: $rosado;
+        .titulo-terapias {
+            display: flex;
+            justify-content: center;
+            
+            text-transform: uppercase;
+            font-weight: 100;
+            font-size: 4.5rem;
+            letter-spacing: .5rem;
+            color: $rosado;
 
-                @media (max-width:1145px) {
-                    letter-spacing: .3rem;
-                }
-
-                @media (max-width:881px) {
-                    letter-spacing: .1rem;
-                }
-
-                @media (max-width:561px) {
-                    font-size: 3rem;
-                    letter-spacing: .8rem;
-                }
+            @media (max-width:1145px) {
+                letter-spacing: .3rem;
             }
+
+            @media (max-width:881px) {
+                letter-spacing: .1rem;
+            }
+
+            @media (max-width:561px) {
+                font-size: 3rem;
+                letter-spacing: .7rem;
+            }
+        
         }
 
         .div-sub-2 {
@@ -757,6 +771,8 @@
 
             @media (max-width:492px) {
                 font-size: 1rem;
+                letter-spacing: .1rem;
+                border-bottom: solid 1px $celeste;
             }
         }
 
@@ -766,11 +782,11 @@
             text-align: left;
             border-left: solid 4px $celeste;
             gap: 1rem;
-            padding-left: .5rem;
 
             .terapia-div-1 {
+                margin: .5rem;
                 padding-top: 1rem;
-                padding-bottom: 1rem;
+                padding-bottom: .5rem;
 
                 h4 {
                     color: $gris;
@@ -855,8 +871,28 @@
 
     @media (max-width:946px) {
         height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 6fr .4fr .4fr;
+        grid-template-areas:
+            "grid-1 grid-1 grid-1"
+            "grid-2 grid-3 grid-4"
+            "grid-5 grid-6 grid-7";
+
+        padding-right: .5rem;
+        padding-left: .5rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
+
+        .cajas {
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    @media (max-width:777px) {
         grid-template-columns: 1fr;
-        grid-template-rows: 8fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas:
             "grid-1"
             "grid-2"
@@ -866,22 +902,33 @@
             "grid-6"
             "grid-7";
 
-        padding-right: 0;
-
         .div-bg-grid {
             border-radius: 1rem;
-            background-size: cover;
         }
     }
 }
 
 .contenedor-cursos {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 6fr 2fr 2fr;
+    grid-template-rows: 2fr 2fr 2fr;
+    grid-template-areas:
+        "grid-1 grid-2 grid-3"
+        "grid-1 grid-4 grid-5"
+        "grid-1 grid-6 grid-7";
+
+    justify-content: center;
+    border-top: solid 1px $celeste;
+    border-bottom: solid 1px $celeste;
+
+    padding-left: 4rem;
+    padding-right: 4rem;
 
     .grid-1-cursos {
-        display: flex;
-        justify-content: center;
-        padding-left: 4rem;
-        padding-right: 4rem;
+        display: block;
+        justify-items: left;
+        justify-content: left;
         overflow: auto;
 
         @media (max-width:1115px){
@@ -889,22 +936,24 @@
             height: max-content;
         }
 
-        .subtitulo-1 {
-            font-size: 1.5rem;
-            letter-spacing: .8rem;
-        }
-
-        .titulo-cursos {
-            text-transform: uppercase;
-            font-weight: 100;
-            font-size: 4.5rem;
-            letter-spacing: .5rem;
-            color: $rosado;
-        }
-
-        .subtitulo-2 {
-            letter-spacing: 1rem;
-            border-bottom: solid 1px $celeste;
+        .caja-titulo {
+            .subtitulo-1 {
+                font-size: 1.5rem;
+                letter-spacing: .8rem;
+            }
+    
+            .titulo-principal {
+                text-transform: uppercase;
+                font-weight: 100;
+                font-size: 4.5rem;
+                letter-spacing: .5rem;
+                color: $rosado;
+            }
+    
+            .subtitulo-2 {
+                letter-spacing: 1rem;
+                border-bottom: solid 1px $celeste;
+            }
         }
 
     
@@ -912,55 +961,71 @@
             display: block;
             justify-content: center;
             text-align: left;
-            padding-top: 1rem;
+            padding-top: .5rem;
 
-            .titulo-curso-1{
-                .dias {
-                    text-transform: uppercase;
-                }
-            }
+            .titulos-cursos {
+                border-bottom: solid 1px $celeste;
+                padding-bottom: 1rem;
 
-            h3 {
+                .titulo-curso{
                     font-size: 1.5rem;
                     color: $celeste;
                     text-transform: uppercase;
                     letter-spacing: .1rem;
                     padding-bottom: .1rem;
-
+    
                     mark {
-                        background-color: $celeste;
-                        opacity: 70%;
+                    background-color: $celeste;
+                    opacity: 70%;
                     }
-            }
-
-            h4 {
-                text-transform: uppercase;
-                color: $celeste;
-                letter-spacing: .1rem;
-                text-align: left;
-            }
-
-            h5 {
-                font-size: .5rem;
-                text-transform: uppercase;
-                color: $celeste;
-                letter-spacing: .1rem;
-                text-align: left;
-            }
-
-            a {
-                color: $gris;
-                font-size: 1.2rem;
-                font-weight: 300;
-                text-transform: uppercase;
-                background-color: $celeste;
-                letter-spacing: .5rem;
-            }
-
-            .descripcion {
-                h4{
-                    padding-top: 1rem;
                 }
+    
+                .subtitulo-curso {
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    letter-spacing: .4rem;
+                    color: $gris;
+                    opacity: 80%;                        
+                }
+
+                .dias-curso {
+                    font-size: 1.5rem;
+                    letter-spacing: .2rem;
+                    color: $celeste;
+                    text-transform: uppercase;
+                }
+            }
+
+            .descripcion-curso {
+                padding-top: 1rem;
+
+                .sub-1 {
+                    font-size: 1.2rem;
+                    text-transform: uppercase;
+                    color: $celeste;
+                    letter-spacing: .1rem;
+                    text-align: left;
+                    font-weight: 400;
+                }
+    
+                p {
+                    font-size: 1rem;
+                    color: $gris;
+                }
+
+                p>.deco {
+                    list-style-type: circle;
+                }
+    
+                a {
+                    color: $gris;
+                    font-size: 1.2rem;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    background-color: $celeste;
+                    letter-spacing: .5rem;
+                }
+
             }
         }
     }
@@ -977,14 +1042,21 @@
             "grid-6"
             "grid-7";
 
-        padding-right: 0;
         height: auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
 
         .div-bg-grid {
             border-radius: 1rem;
             background-size: cover;
         }
     }
+
+    @media (max-width:777px){
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
 }
 
 .contenedor-blog {
@@ -1002,7 +1074,7 @@
 
         .caja-titulo {
             .subtitulo-1 {
-                font-size: 1rem;
+                font-size: 1.5rem;
                 letter-spacing: .5rem;
             }
     
@@ -1012,6 +1084,10 @@
                 font-size: 4.5rem;
                 letter-spacing: .5rem;
                 color: $rosado;
+
+                @media (max-width:777px){
+                    font-size: 4rem;
+                }
     
             }
     

@@ -90,10 +90,10 @@ header {
             .dropdown-toggle {
                 display: flex;
                 color: $blanco;
-                font-size: 3rem;
-                background-color: $blanco;
+                font-size: 4rem;
+                background-color: transparent;
                 flex-direction: row-reverse;
-                border-color: transparent;
+                border: none;
 
                 .bi {
                     color: $rosado;

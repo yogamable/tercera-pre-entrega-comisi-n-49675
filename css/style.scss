@@ -1,16 +1,10 @@
-@import "./partials.scss/_reset";
-@import "./partials.scss/_variables";
-@import "./partials.scss/_header";
-@import "./partials.scss/_header";
-@import "./partials.scss/_main";
-@import "./partials.scss/_footer";
-@import "./partials.scss/_mediaqueries-scss";
-
-
-
-
-
-
+@import "./partials.scss/reset.scss";
+@import "./partials.scss/_variables.scss";
+@import "./partials.scss/_header.scss";
+@import "./partials.scss/_header.scss";
+@import "./partials.scss/_main.scss";
+@import "./partials.scss/_footer.scss";
+@import "./partials.scss/_mediaqueries.scss";
 
  @-webkit-keyframes focus-in-expand {
   0% {
